@@ -6,7 +6,7 @@
   "googleAnalyticsId": "",
   "disqusShortname": "",
   "postsLimit": 4,
-  "pathPrefix": "/",
+  "pathPrefix": "/blogger",
   "menu": [
     {
       "label": "Blogs",

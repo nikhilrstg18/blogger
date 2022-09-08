@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Nikhil Rustagi]]></title><description><![CDATA[Blog by Nikhil Rustagi]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 08 Sep 2022 16:53:39 GMT</lastBuildDate><item><title><![CDATA[Getting Started with Javascript]]></title><description><![CDATA[JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries..]]></description><link>https://nihkilrstg18.github.io/folio/posts/2022-12-09---1001-Javascript/1001-javascript</link><guid isPermaLink="false">https://nihkilrstg18.github.io/folio/posts/2022-12-09---1001-Javascript/1001-javascript</guid><pubDate>Thu, 01 Sep 2022 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries..&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/28901fe738845f3f92717110b9d4de1d/3fe84/social.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42.91666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAcwlMLlJP//EABoQAAICAwAAAAAAAAAAAAAAAAABAxEQITL/2gAIAQEAAQUCYtFWR8LH/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BR//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABcQAQADAAAAAAAAAAAAAAAAABABIUH/2gAIAQEABj8Cwok//8QAGhABAAMBAQEAAAAAAAAAAAAAAQARMXEQYf/aAAgBAQABPyFXgHInh+xtsNcmnm7P/9oADAMBAAIAAwAAABAk7//EABcRAQEBAQAAAAAAAAAAAAAAAAEAIRH/2gAIAQMBAT8QNZ4cb//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAgBAgEBPxBwhy//xAAhEAEAAQMCBwAAAAAAAAAAAAABABEhUTHBQXGBkaGx0f/aAAgBAQABPxAiIsEJ9Vr0hSNluqDGSKyQtXi7E8nebXuanOf/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/28901fe738845f3f92717110b9d4de1d/8ac56/social.webp 240w,
+/blogger/static/28901fe738845f3f92717110b9d4de1d/d3be9/social.webp 480w,
+/blogger/static/28901fe738845f3f92717110b9d4de1d/e46b2/social.webp 960w,
+/blogger/static/28901fe738845f3f92717110b9d4de1d/f992d/social.webp 1440w,
+/blogger/static/28901fe738845f3f92717110b9d4de1d/3c935/social.webp 1599w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/28901fe738845f3f92717110b9d4de1d/09b79/social.jpg 240w,
+/blogger/static/28901fe738845f3f92717110b9d4de1d/7cc5e/social.jpg 480w,
+/blogger/static/28901fe738845f3f92717110b9d4de1d/6a068/social.jpg 960w,
+/blogger/static/28901fe738845f3f92717110b9d4de1d/644c5/social.jpg 1440w,
+/blogger/static/28901fe738845f3f92717110b9d4de1d/3fe84/social.jpg 1599w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/28901fe738845f3f92717110b9d4de1d/6a068/social.jpg&quot;
+            alt=&quot;Javascript code&quot;
+            title=&quot;Javascript code&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#javascript-101&quot;&gt;JavaScript 101&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#understanding-js-engine&quot;&gt;Understanding JS Engine&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#inside-js-engine&quot;&gt;Inside JS Engine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#understanding-heap&quot;&gt;Understanding Heap&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#memory-leaks&quot;&gt;Memory Leaks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#understanding-call-stack&quot;&gt;Understanding Call Stack&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#stack-overflow&quot;&gt;Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#garbage-collection&quot;&gt;Garbage Collection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#single-threaded&quot;&gt;Single Threaded&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#understanding-js-runtime&quot;&gt;Understanding JS Runtime&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#js-engine&quot;&gt;JS Engine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#browser-web-api&quot;&gt;Browser Web API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#event-loop-and-callback-queue&quot;&gt;Event Loop and Callback Queue&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;javascript-101&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#javascript-101&quot; aria-label=&quot;javascript 101 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JavaScript 101&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;What is JS&lt;/strong&gt; ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;JavaScript (JS) is a&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;dynamic&lt;/strong&gt; (aka loosley typed)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;interpreted&lt;/strong&gt; or &lt;strong&gt;compiled&lt;/strong&gt; (JIT compiled)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;garbage-collected&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;single-threaded&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;multi-paradigm&lt;/strong&gt; (functional and object oriented)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;programming language with &lt;strong&gt;functions as first-class citizens&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: you will be able to elaborate and explain javascript with more clarity by end of this section&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.&lt;/p&gt;
+&lt;p&gt;Read more @ &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;MDN&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When and Who created JS?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In 1995, &lt;strong&gt;Brendon Eich&lt;/strong&gt; created JS to add interactivity in  egendary Netscape Navigator web browser.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why learn JS?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;JS was popular, is popular and with its ongoing evolution JS will remain popular.&lt;br&gt;
+See most popular technology @ &lt;a href=&quot;https://survey.stackoverflow.co/2022/#technology-most-popular-technologies&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;stackoverflow survey 2022&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Where to use JS?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;JS runs both in  and outside web browser.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;How JS works?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To understand how JS works, you need to understand&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JS Engine&lt;/li&gt;
+&lt;li&gt;JS Runtime&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;understanding-js-engine&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#understanding-js-engine&quot; aria-label=&quot;understanding js engine permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Understanding JS Engine&lt;/h1&gt;
+&lt;p&gt;Almost everyone who has worked with JS, as heard about JS Engine&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JS is a single threaded language that uses callbacks or Callback-Queue&lt;/li&gt;
+&lt;li&gt;JS is interpreted or compiled?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 619px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/a4bde2c19345f7e1fd63d6a5d1399250/e628c/jse-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.166666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABkElEQVQY0zVRW0sCQRjd32WmO7ORXQwiKkvbnVmo7IKYShepVIIKi63dmfVSFN0oiYLM7KGIHnqw7CEi6EJPPfcXFKuZNfj4ON9whnO+8wkQU4gIRARg1iFmAFgjpgyzThlWdFfkuD1559bu2xaupaGsYDEgp1oF6i/0v4ikmsC31rF0Eyr/rLzVFl9rcy8/yvm3ADBxKnpdB1mylBUfISYOhTbijK1Pc80WR0vV6GNl8qESLFX7Dz4FgNMt/i1R0TmV/lu1MHEi0zOuIX98cHrTG0l3L182zeRb5y6aQzmADCGSmHh63t4qvgNsQETr+tyCpJo2rx6Nkb3NlZPLwsb+hm8s0eDRwIAG5HWAiBBIJJ8/rgrlr87AtkPWoUp5eFRSqUOhnWMkd5ZJHa7m8qmTgobDCbtsSiqF2ASYCm0jO7HMbTB52jKcFRXDCh8gImHqGCBdAbJbIB7/fFw7cnunxN4YVFP8KGw7QUS63bvW6NNFZPCQrLTYf7YFMpz9WpNKesI7ABlOmd+SW/uz/Qtd1toCblWRKwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/a4bde2c19345f7e1fd63d6a5d1399250/8ac56/jse-1.webp 240w,
+/blogger/static/a4bde2c19345f7e1fd63d6a5d1399250/d3be9/jse-1.webp 480w,
+/blogger/static/a4bde2c19345f7e1fd63d6a5d1399250/3aa79/jse-1.webp 619w&quot;
+              sizes=&quot;(max-width: 619px) 100vw, 619px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/a4bde2c19345f7e1fd63d6a5d1399250/8ff5a/jse-1.png 240w,
+/blogger/static/a4bde2c19345f7e1fd63d6a5d1399250/e85cb/jse-1.png 480w,
+/blogger/static/a4bde2c19345f7e1fd63d6a5d1399250/e628c/jse-1.png 619w&quot;
+            sizes=&quot;(max-width: 619px) 100vw, 619px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/a4bde2c19345f7e1fd63d6a5d1399250/e628c/jse-1.png&quot;
+            alt=&quot;without JS Engine&quot;
+            title=&quot;without JS Engine&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So if your write some English like statement/code in your JS file. And if you directly provide this JS file as input to your computer, it might raise a flag that it does understand JS language.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 712px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/b314362c64e4e075474eccea11645367/3d4b6/jse-3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB9ElEQVQoz02R3U/TUBiH+z95gVDW9rQDkakIjIy2O/1YwIYmCAOHykImbksHbO1pz9mmgDpCdNGQGBQv5oIfwZsp0ZmQmJgY7tRw5Z0Xxs0MDFny3r3vk/eX50f1JR4EMpsh77G4umU82pnaqU5Xd3uMAlA8XsPtA8I2J2UBdDg5B8JOdyhNke9192e9cHQQPaqlD2upz2+ju8/8BgZKO0k4iHqi5UGyH7z/ZehOvS/+nB5JUufixd7ZImcSZhx3qU5HONchrgC17a2OubDTP1ueq/25/qk5/7Fxs95YOGgO3N6mWNHlJBfIiA+7fgULChZUwmuYVTE4SasRBmK/WTJe/pr60Jx+35ip/Z3Z+31+7iHVWqueT1lnlTwL0fE1Bgq6OIaA6gENC7p7KWINXEEyen3ZqlywXgWSFcEs0cOLLZiBXpZEX7zbC8XKDEQcdKQJ61aSDEVSjOL1604ht7S6ca+8vaVOpjuDS7yc5VXPF0pTfp10jtp3N+2vP75dQ1VazAGNQHM5k/LMG4UzQTvhFEtP7PzGSuXNWiRm0TIWIoTXScu2oGGf7AxHy5OZp4NX1zno8joRYFY2koFxfDaEYlk8EU+Y82uj5jI9ssjreaB5/+ETnwx0ukSbhe6p5FZ+BQs69klut4R6x1oMd9zCKfwPwp/7NEqWzV8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/b314362c64e4e075474eccea11645367/8ac56/jse-3.webp 240w,
+/blogger/static/b314362c64e4e075474eccea11645367/d3be9/jse-3.webp 480w,
+/blogger/static/b314362c64e4e075474eccea11645367/c4538/jse-3.webp 712w&quot;
+              sizes=&quot;(max-width: 712px) 100vw, 712px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/b314362c64e4e075474eccea11645367/8ff5a/jse-3.png 240w,
+/blogger/static/b314362c64e4e075474eccea11645367/e85cb/jse-3.png 480w,
+/blogger/static/b314362c64e4e075474eccea11645367/3d4b6/jse-3.png 712w&quot;
+            sizes=&quot;(max-width: 712px) 100vw, 712px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/b314362c64e4e075474eccea11645367/3d4b6/jse-3.png&quot;
+            alt=&quot;With JS Engine&quot;
+            title=&quot;With JS Engine&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;JS engine is going to take it as input and convert it to output that is more familiar for a machine (machine code)&lt;/p&gt;
+&lt;p&gt;concepts covered&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inside JS Engine (Google’s V8)&lt;/li&gt;
+&lt;li&gt;Heap&lt;/li&gt;
+&lt;li&gt;Call stack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;inside-js-engine&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#inside-js-engine&quot; aria-label=&quot;inside js engine permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inside JS Engine&lt;/h2&gt;
+&lt;p&gt;So,  learnt thatS Engine is the one who takes our JS file/code and converts that to machine code to be understandable by machine
+Let’s look inside popular engine used by chrome and nodejs i.e. Google’s V8 JS Engine&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 935px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/2396b458bdb74a57d5bd16196d4f7612/eb390/jse-4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 52.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACZ0lEQVQoz12P/U8SARjH739qa64XuTtdJTENMDgOzzs5BF/wNPAVzaWbaJh3cnfAAYkyIVFEhbAaKmqZkUgqikSd1lqttf6JZtZybZ8fnmf7fp59H+BGv182Mq0aD2s984aZhDmZMiVWIIKuo2ipjgZxDiLYc2CCg3AWwln4bOVgggP4b/vc94Oxnznzj7cjpzuD+xtUfAnS01brGNrCXsfOcufAf2D/DhxQbhXK272SRu4aOV6CPbqE2i+rH0I1TJl2FMIcIMZAtSyEX5T/XQHUlO82OSrtfSEbWJUNrCltSeVwsmJwXW2LVg3FtfeT82Q40cjEWnpkOCMh+Is+4I3ODAsGYzBjjn8xRsTWpUzP8qumha8P5p61Ly5T7tyBau6zpv8UqZbjdCnhLLtYW2r0wDq+zz5BBI40k3mFN6/0HaFTedRftMS2LYEdoXMz1s1622y3cAf4388g5ijTC3f4PcVkkQzsd4UzDbMiPl0gQ0fmaLEnketeThs8z6XMtoTgJTU8VMvDdRz8uz8AEQ5YLyicWeXEsT6UaQ7nDDMf6oLHRDCLTOXQqcPe2AYWOlGxb0CMlXfabxrpq8j4FYSRYCwA4w5I59b4DlsXREu0oPIXKz3vFb6C8vGx3JdX+wuGJ6IpKmLunRK1q9pqqzDYXJ7QYupl80DgTAbrvbgj1TiZtcT32hbSXU83myK7DbMnVPSjKSIaZ4v1c59Q95qpQwvW2nW9THIr8k7cumfzATDOwqRQNbQqp7flbPou9xpxblVzacSZ1bh2Edeu2plBhL2q4ZVKsg/v4FEzp6S8CipYWsP+AlJuUV9qs1iCAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/2396b458bdb74a57d5bd16196d4f7612/8ac56/jse-4.webp 240w,
+/blogger/static/2396b458bdb74a57d5bd16196d4f7612/d3be9/jse-4.webp 480w,
+/blogger/static/2396b458bdb74a57d5bd16196d4f7612/c7dd1/jse-4.webp 935w&quot;
+              sizes=&quot;(max-width: 935px) 100vw, 935px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/2396b458bdb74a57d5bd16196d4f7612/8ff5a/jse-4.png 240w,
+/blogger/static/2396b458bdb74a57d5bd16196d4f7612/e85cb/jse-4.png 480w,
+/blogger/static/2396b458bdb74a57d5bd16196d4f7612/eb390/jse-4.png 935w&quot;
+            sizes=&quot;(max-width: 935px) 100vw, 935px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/2396b458bdb74a57d5bd16196d4f7612/eb390/jse-4.png&quot;
+            alt=&quot;Inside JS Engine&quot;
+            title=&quot;Inside JS Engine&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So when you give a JS file to JS engine to run it&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Parser&lt;/strong&gt;: It performs lexical analysis, which breaks the code into something called tokens based JS grammar /keywords to identify the meaning of code to determine what code is trying to do&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;AST&lt;/strong&gt;: These tokens then forms an AST (Abstract Syntax Tree). Tool &gt; &lt;a href=&quot;https://astexplorer.net/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://astexplorer.net/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AST looks gibberish to Human but it allows JS Engine to understand what code is trying to do&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Interpreter&lt;/strong&gt;: Translate the source code into machine code, does it by reading line by line execute it. Of course, the source code still needs to be converted into machine code, but it simply happens right before it’s executed and not ahead of time&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 794px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/bbdc9dd09ef5fbea628f50b0ef6a7332/7de01/jse-6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 14.166666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVQI1zWNvQqCUBhA79sEuddQa3tDr+UuWDlFKOUQFBiEP0OD16tXovLz834ilFs9Q5R0xjOcw4y5ZSysle0govrTNA0ACCEQsa7rTlaVIoUtLR+oP1FvyWL9wUgbjifTGU+SPM+llJzzMAx93/c8LwiCKIriOJYyEyITyfkNveuJXY7sBRqzN66zdXf7Q4nlt08EAGmadqGOoiiI6DcvCdZ0N9XNJLA/Tn6IQHo0EOcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/bbdc9dd09ef5fbea628f50b0ef6a7332/8ac56/jse-6.webp 240w,
+/blogger/static/bbdc9dd09ef5fbea628f50b0ef6a7332/d3be9/jse-6.webp 480w,
+/blogger/static/bbdc9dd09ef5fbea628f50b0ef6a7332/ae710/jse-6.webp 794w&quot;
+              sizes=&quot;(max-width: 794px) 100vw, 794px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/bbdc9dd09ef5fbea628f50b0ef6a7332/8ff5a/jse-6.png 240w,
+/blogger/static/bbdc9dd09ef5fbea628f50b0ef6a7332/e85cb/jse-6.png 480w,
+/blogger/static/bbdc9dd09ef5fbea628f50b0ef6a7332/7de01/jse-6.png 794w&quot;
+            sizes=&quot;(max-width: 794px) 100vw, 794px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/bbdc9dd09ef5fbea628f50b0ef6a7332/7de01/jse-6.png&quot;
+            alt=&quot;Interpreter&quot;
+            title=&quot;Interpreter&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;for eg&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;someCalculation&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;x y&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;someCalculation&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Interpreter starts reading the source code from top to bottom
+first it read line 1 and understands that the function &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;someCalculation&lt;/code&gt;&lt;/strong&gt; is declared and then line 2 then line 3 and understands the function body and finally executes it before jumping to line 4&lt;/p&gt;
+&lt;p&gt;and at line it reads for keyword and understands that the for   loop is declared follows be reading line 4 and line 6 and understands the expression that it need to iterate and finally executes for-loop before jumping to next line of the source code (which EOF in our case)&lt;/p&gt;
+&lt;p&gt;then for each iteration of loop its going to execute line 1 then line 2 then line 3.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; in this approach even though result of someCalculation remains same it execute the function for each iteration&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Profiler&lt;/strong&gt;: Covered in next topic&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Compiler&lt;/strong&gt;: Translate the source code into machine code, does it by reading source code in one go and execute it i.e. Compiler works ahead of time to create a translation of the source code which is translated into bytecode(closely related to machine code i.e. understandable my machine)&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 838px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/b0613e13035ab62bc0df26560b587d67/a1dd2/jse-5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 14.583333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwklEQVQI1wG3AEj/AOHi46ywsrK1trK1t+vs7O3s7OPj4/X09dXp1b/fwL/ewNDn0PPy8+Xl5Onp6vPy7fPrsPDoqPHppPXx1wC6vb4nMjc3Qkc1QEXKzM3Q0M/Gx8bZ1dmRy5JIn0tKoE2CxITi4eLHx8bKys7g3s3t1x/PuQ7dxQD06pMA6urqyszNzM7Qzc/Q7u/v7+/v7e7t8fDx4u/i0+rU0+rU3u7f9fT17e3s7u/v9fXx9fHG8+7A9O++9fPg0liOWvhI35UAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/b0613e13035ab62bc0df26560b587d67/8ac56/jse-5.webp 240w,
+/blogger/static/b0613e13035ab62bc0df26560b587d67/d3be9/jse-5.webp 480w,
+/blogger/static/b0613e13035ab62bc0df26560b587d67/7820a/jse-5.webp 838w&quot;
+              sizes=&quot;(max-width: 838px) 100vw, 838px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/b0613e13035ab62bc0df26560b587d67/8ff5a/jse-5.png 240w,
+/blogger/static/b0613e13035ab62bc0df26560b587d67/e85cb/jse-5.png 480w,
+/blogger/static/b0613e13035ab62bc0df26560b587d67/a1dd2/jse-5.png 838w&quot;
+            sizes=&quot;(max-width: 838px) 100vw, 838px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/b0613e13035ab62bc0df26560b587d67/a1dd2/jse-5.png&quot;
+            alt=&quot;Compiler&quot;
+            title=&quot;Compiler&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;for eg&lt;/p&gt;
+&lt;p&gt;Input to compiler ( source code in one go )&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;someCalculation&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;x y&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;someCalculation&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;output of compiler ( optimized bytecode )&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;someCalculation&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;x y&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Interpreter or compiler ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Both have their pros and cons&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Interpeter&lt;/th&gt;
+&lt;th&gt;Compiler&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Faster to get up and running&lt;/td&gt;
+&lt;td&gt;Slower to get up and running&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;But it get slower in execution as it doesn’t do any kind of optimization in case of huge JS code&lt;/td&gt;
+&lt;td&gt;But it is faster in execution as it does some sort of optimization in case of huge JS code&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Can we have best of both worlds ?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;JIT compiler, Let’s understand how Google’s v8 engine does this&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 935px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/2396b458bdb74a57d5bd16196d4f7612/eb390/jse-4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 52.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACZ0lEQVQoz12P/U8SARjH739qa64XuTtdJTENMDgOzzs5BF/wNPAVzaWbaJh3cnfAAYkyIVFEhbAaKmqZkUgqikSd1lqttf6JZtZybZ8fnmf7fp59H+BGv182Mq0aD2s984aZhDmZMiVWIIKuo2ipjgZxDiLYc2CCg3AWwln4bOVgggP4b/vc94Oxnznzj7cjpzuD+xtUfAnS01brGNrCXsfOcufAf2D/DhxQbhXK272SRu4aOV6CPbqE2i+rH0I1TJl2FMIcIMZAtSyEX5T/XQHUlO82OSrtfSEbWJUNrCltSeVwsmJwXW2LVg3FtfeT82Q40cjEWnpkOCMh+Is+4I3ODAsGYzBjjn8xRsTWpUzP8qumha8P5p61Ly5T7tyBau6zpv8UqZbjdCnhLLtYW2r0wDq+zz5BBI40k3mFN6/0HaFTedRftMS2LYEdoXMz1s1622y3cAf4388g5ijTC3f4PcVkkQzsd4UzDbMiPl0gQ0fmaLEnketeThs8z6XMtoTgJTU8VMvDdRz8uz8AEQ5YLyicWeXEsT6UaQ7nDDMf6oLHRDCLTOXQqcPe2AYWOlGxb0CMlXfabxrpq8j4FYSRYCwA4w5I59b4DlsXREu0oPIXKz3vFb6C8vGx3JdX+wuGJ6IpKmLunRK1q9pqqzDYXJ7QYupl80DgTAbrvbgj1TiZtcT32hbSXU83myK7DbMnVPSjKSIaZ4v1c59Q95qpQwvW2nW9THIr8k7cumfzATDOwqRQNbQqp7flbPou9xpxblVzacSZ1bh2Edeu2plBhL2q4ZVKsg/v4FEzp6S8CipYWsP+AlJuUV9qs1iCAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/2396b458bdb74a57d5bd16196d4f7612/8ac56/jse-4.webp 240w,
+/blogger/static/2396b458bdb74a57d5bd16196d4f7612/d3be9/jse-4.webp 480w,
+/blogger/static/2396b458bdb74a57d5bd16196d4f7612/c7dd1/jse-4.webp 935w&quot;
+              sizes=&quot;(max-width: 935px) 100vw, 935px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/2396b458bdb74a57d5bd16196d4f7612/8ff5a/jse-4.png 240w,
+/blogger/static/2396b458bdb74a57d5bd16196d4f7612/e85cb/jse-4.png 480w,
+/blogger/static/2396b458bdb74a57d5bd16196d4f7612/eb390/jse-4.png 935w&quot;
+            sizes=&quot;(max-width: 935px) 100vw, 935px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/2396b458bdb74a57d5bd16196d4f7612/eb390/jse-4.png&quot;
+            alt=&quot;JS Engine composition&quot;
+            title=&quot;JS Engine composition&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Initially&lt;/p&gt;
+&lt;p&gt;Source code -&gt; &lt;strong&gt;Parse&lt;/strong&gt; -&gt; &lt;strong&gt;AST&lt;/strong&gt; -&gt; &lt;strong&gt;Interpreter&lt;/strong&gt; -&gt; &lt;strong&gt;bytecode&lt;/strong&gt; (aka ignition i.e. to execute our code asap)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Profiler&lt;/strong&gt;: Monitors and watches the code as it runs and makes notes on how we can optimize this code : how many times it has been run? what types are used? How possible optimize this?&lt;/p&gt;
+&lt;p&gt;Now as the bytecode from interpreter is running, a copy of source code is given to compiler along with the optimization notes from profiler and generates optimized bytecode.&lt;/p&gt;
+&lt;p&gt;This means the JS code given to v8 engine is going to gradually improve because profiler and compiler are constantly improving bytecode as the app is running i.e. why called as JIT compiler&lt;/p&gt;
+&lt;p&gt;Finally it mixes and matches or replace bytecode from interpreter with optimized bytecode from compiler to run on machine and this constantly run through this loop
+Compiler as the app is running, takes the bytecode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Interpreter&lt;/strong&gt; JS is interpreted ?&lt;/p&gt;
+&lt;p&gt;Yes, Initially when JS first came out, JS engine like SpiderMonkey created by Brendon Eich that interpreted JS to bytecode and that engine was able to run inside our browser to tell our computers what to do. But things are evolved now to use profiler and compiler aka JIT compiler to optimize this code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Compiler&lt;/strong&gt; JS is compiled?&lt;/p&gt;
+&lt;p&gt;Yes, it depends on the implementation of modern JS Engine&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;JIT Compiler&lt;/strong&gt; JS is JIT compiled?&lt;/p&gt;
+&lt;p&gt;Yes, eg v8 engine by google&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So far we learnt that JS Engine does a lot of work for us, but more important thing is reading our code and executing it which has 2 most important steps&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Heap&lt;/li&gt;
+&lt;li&gt;Call Stack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;understanding-heap&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#understanding-heap&quot; aria-label=&quot;understanding heap permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Understanding Heap&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 633px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/ba4646320661df2411e6b14a85e3cac7/bce72/jre-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.166666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACqklEQVQozz2S7U9SYRiHz7/UMBCOb4hwxKmziZpwnvMcxGgiKIpKuqZTKUFFEc7D4QDlMudEc9p0YS7LtJVWvnwLktS+ZJAZwszN9aEdXG3Xftt9b9fu34cbk1BITDESiMSQzyuyKUZZP1JvceVRLhyiXMjk0igXenIoHn6ETA5ksP8CD+3FaRanvSLIlumd3T2jhB4JIHudZgUalAXZLMgKMpmVWWI4L3hx6OVl4OYh3RJyTKIZlVGDEuCuUA+SlAOaEQnsJLRrtA4NHCShQ0UPYyLSIyQ9IsB3xg2TuGla0jglMU7hximxcVrUMLXS1no5bj5/1p5yG+JA9V1d8Q3cOFWXvQEQKzU9LDU9IBoCYgoVje7WzX7VhQ50ocO66QPD3JF68uj5vYaLJzfPwpb0cmtqvCnRAI6qy+Pq8nWgxVRtE7dt8zUdj0WAkTm3i4Mxgoso/VElF1VyEUUgtmaynmgF8WBVetGcDrekF9qPO2/F1eUbgMby6rz6bn++zickkWxkmwjGFL6IwhclfFGFLyrnout3+n/bjCch49mSOTVvSIUtvybAD6DcILWYi3UuP73f7xzAoaeQv7zPy1xG5iJyNvaip/k8VJ1esaaWWs5WetLhtmTIdNqo2tBArNMxtjA78ChgKdS5CoZ3rmQiIxO+iNy//9JsTRiEiQkytdianNUnUMnPOSrZVfq6Votdq/VWmpG5dwiHjHR4mwh8Vvg+8T5fPlLERd81dV1qSk79NRevrH84VVIji+ukZzXK9wBgOTQSkkig9mZTSObaLR4/JAL7RCBWnEER/DJzd2yvuXmnr/J4smrP1fShsWODrN8EYIZq5D8Mp1EuzYgplNe7Vjj0UWrfKnBsSf8ht79V2DdLbavVtlmFY7Oob7VAi6TQnU8zfwFJrm46SeDnEQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/ba4646320661df2411e6b14a85e3cac7/8ac56/jre-1.webp 240w,
+/blogger/static/ba4646320661df2411e6b14a85e3cac7/d3be9/jre-1.webp 480w,
+/blogger/static/ba4646320661df2411e6b14a85e3cac7/5c300/jre-1.webp 633w&quot;
+              sizes=&quot;(max-width: 633px) 100vw, 633px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/ba4646320661df2411e6b14a85e3cac7/8ff5a/jre-1.png 240w,
+/blogger/static/ba4646320661df2411e6b14a85e3cac7/e85cb/jre-1.png 480w,
+/blogger/static/ba4646320661df2411e6b14a85e3cac7/bce72/jre-1.png 633w&quot;
+            sizes=&quot;(max-width: 633px) 100vw, 633px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/ba4646320661df2411e6b14a85e3cac7/bce72/jre-1.png&quot;
+            alt=&quot;Heap&quot;
+            title=&quot;Heap&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Place to store and write information (variables, objects, etc) —&gt; Memory Heap —&gt; used by JS engine for memory allocation&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; number &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// allocate memory for number&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; string &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;hi&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// allocate memory for string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; human &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;     &lt;span class=&quot;token comment&quot;&gt;// allocate memory for object ...and its values&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Nikhil&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;28&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;memory-leaks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#memory-leaks&quot; aria-label=&quot;memory leaks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Memory Leaks&lt;/h2&gt;
+&lt;p&gt;eg.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; array &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    array&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Execute above code in console tab of dev tools in chrome and see what happens&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/25632b612b212a2201df107c6877e859/eba85/jre-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.583333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABJUlEQVQoz5WQjU0DMQyFb/8lGIIVGIAJkBAHFW3J5cdxbMdOIFeoquqg4pOlSHZe/PKmEGJBJOJCtD98PD3P827/ujvMb/uXWzX13mutGTEB5JyxFGb2PhAzi5xrkyG+wsyOxyMz91tMm13vvXNOWIiIiUTkH2JmYRp+7YfL6ez0PYzO1FbMrJ0xK2xVrfd2hVnrvd89wP1j6b1NMUHKGTImQJ9yylTKMIs4zjRixDHNCJBDTIBUpVRhAJwyYIqISJCRSGodFnQ4baqKSFiImLFQgQyp5JGAstSqOjVtUoTGNtFVefrC3zmbmapO68XvL50HIUbvfQhhjX3xg7AsTquatVOEQ7z5KgA450IIzrllZYi9DzEmgBiTiJjZhlh+hy/42vwJWWy7OfnxddwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/25632b612b212a2201df107c6877e859/8ac56/jre-2.webp 240w,
+/blogger/static/25632b612b212a2201df107c6877e859/d3be9/jre-2.webp 480w,
+/blogger/static/25632b612b212a2201df107c6877e859/e46b2/jre-2.webp 960w,
+/blogger/static/25632b612b212a2201df107c6877e859/d7d7f/jre-2.webp 1054w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/25632b612b212a2201df107c6877e859/8ff5a/jre-2.png 240w,
+/blogger/static/25632b612b212a2201df107c6877e859/e85cb/jre-2.png 480w,
+/blogger/static/25632b612b212a2201df107c6877e859/d9199/jre-2.png 960w,
+/blogger/static/25632b612b212a2201df107c6877e859/eba85/jre-2.png 1054w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/25632b612b212a2201df107c6877e859/d9199/jre-2.png&quot;
+            alt=&quot;Aw, Snap in modern browser&quot;
+            title=&quot;Aw, Snap in modern browser&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;3 common memory leaks with eg&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// global variables&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Nikhil&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// adding event listeneners and not removing it&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; element &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;button&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+element&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;click&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// variables or objects referenced in callback of setInterval&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// referencing object... &lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// these objects are never garbage collected...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;understanding-call-stack&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#understanding-call-stack&quot; aria-label=&quot;understanding call stack permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Understanding Call Stack&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 640px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/5097f931750e55f6d2c7faa05875e763/6af66/jre-3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 47.91666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACaUlEQVQozyXS+08SAQDA8fuH+qXM6k6o9dh0IxSdKNzgDsMH4CEnLMDwgWATfHAXHtomKloqoBCGoiAKOgsHa1Sbm7/FamrFxDvwkf5gU7fvr5/fvgCEUCBCQQgFid6AMAHCxIPrQJi4B5NlcL+iphPDSQwbkNcaFahZjphkiBlDuivQQQC8xqDIDja6WPgcG/eyVV427n2k8tzB/RolcW5TFIL6Ux+e04j+8nlZuOJAyCsIOVax7hqjDhAmSgyr/JmfIk/mpjrPD8HcoWFghnGw6BjGfFTmQ+pcP7YP83/VlB8JuRaxDmBJHNANbo9UjuxKbGkx+RUl0gLqG+qOb31oKNjv/nZBOY88v4jnwxr6rWrvheBIwLEiOoDb4uKpp8oahos6V3tMiVSdZ7Np/pMksNTnHFgbdE70/xuvzI7i9EILE9Qw/ubjDWnWUnlUxemT6AB3cG0iEC+VDhV1RHvMiZTUE2/ypeq9ZHv86cROwIcfT4OFrYbTJJcOSelg29mXZ1kSpvlVVrEWuLzMXOR2NMbxW/qIsTcZk/lD2EJMvmA3RQwrY5uz2L7i4R5RUliqoIPqfERRWEeZaMe5A7GKXwK2kcVW42yJkCzuiprNiW2pd13m3673ObpW9csuK+E6bC3/Y39yknyej7QwMclpqJEZ4563sQcRLXC71l4EU5DQVmxc6zUlvkvcn5vmk2hg0TKpX56yENMnzbyMlnMwyjkLSy9WSjNUdbquardWYEQMwNUeKAXBRPGrsOx10qFaItThYXxF071R7YwqJueU793Kd95oqHrXybKR1setM/eFQ1cEof4D4phL5sf3Y3YAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/5097f931750e55f6d2c7faa05875e763/8ac56/jre-3.webp 240w,
+/blogger/static/5097f931750e55f6d2c7faa05875e763/d3be9/jre-3.webp 480w,
+/blogger/static/5097f931750e55f6d2c7faa05875e763/0ba47/jre-3.webp 640w&quot;
+              sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/5097f931750e55f6d2c7faa05875e763/8ff5a/jre-3.png 240w,
+/blogger/static/5097f931750e55f6d2c7faa05875e763/e85cb/jre-3.png 480w,
+/blogger/static/5097f931750e55f6d2c7faa05875e763/6af66/jre-3.png 640w&quot;
+            sizes=&quot;(max-width: 640px) 100vw, 640px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/5097f931750e55f6d2c7faa05875e763/6af66/jre-3.png&quot;
+            alt=&quot;call stack&quot;
+            title=&quot;call stack&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Place to store and keep track of what happening line by line on our code —&gt; Call Stack - used by JS engine to keep track of where you code is, in execution&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;subtractTwo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; num&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sum &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;subtractTwo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sum&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;debugger&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Run above code as snippet in Source tab of Developer console of chrome
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/44341d4c14e0234e569e8b1695d6ae7a/7ae9c/jre-4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.75000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABYUlEQVQoz3WL2W7bMBBF+f//kjhwpMe8OfmCAgXqWuImWjspiaS4moFkNE2L5OAMMXeIC56+4XB4enk5vr0dT6fj6TV/ft4u/wEO3/P4uPnwsL1fArI8u5Pnu1n2kXeyfbJPS/7xCSDCFWOYEkTZr2ILJUSUXQuISoRoxYo9ni8lRJhUVQEhq5vfRVFABOqup6yH6HpGDWRi4JKLRSq97N4XMQnayaYfuRAjF8PIEcK0YsBYuyxm6fTQqrbTSlmlze0PMd5SSlKqru+VVsZaY91q7DTPQkzAOWe1iTZ4H0MI6V9ut62stcQE1027GqvWVa9Gm03gfQjOO66HZm7rXiultYkxfi53vbyUFaZk5MI6vxq79det7CCcf/6Q7eDb0TaDvfZumCJf0l0hE2EWkhZhggmtm1bMi9Kr0isIIYz90tXS+hRC8iH5mFxIzv/Vh8jq+nwpLyWEmAxc8Gnm0/wODKcIUgAW2tcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/44341d4c14e0234e569e8b1695d6ae7a/8ac56/jre-4.webp 240w,
+/blogger/static/44341d4c14e0234e569e8b1695d6ae7a/d3be9/jre-4.webp 480w,
+/blogger/static/44341d4c14e0234e569e8b1695d6ae7a/e46b2/jre-4.webp 960w,
+/blogger/static/44341d4c14e0234e569e8b1695d6ae7a/bb9fe/jre-4.webp 972w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/44341d4c14e0234e569e8b1695d6ae7a/8ff5a/jre-4.png 240w,
+/blogger/static/44341d4c14e0234e569e8b1695d6ae7a/e85cb/jre-4.png 480w,
+/blogger/static/44341d4c14e0234e569e8b1695d6ae7a/d9199/jre-4.png 960w,
+/blogger/static/44341d4c14e0234e569e8b1695d6ae7a/7ae9c/jre-4.png 972w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/44341d4c14e0234e569e8b1695d6ae7a/d9199/jre-4.png&quot;
+            alt=&quot;chrome dev - console&quot;
+            title=&quot;chrome dev - console&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Notice when you execute script with debugger, script paused on debugger and even before calc function is called, there is something in the call stack named—&gt; anonymous aka Global Execution Context which is something that will discuss in later topics
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/30990787d9bfdd5e0ca5d0b6266ea81f/ad00e/jre-5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 46.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABj0lEQVQoz22N246bMBiEef9n6cKSlLCJelP1AXpZRU02ifEJYxzApx9jkypttVKlfhrNzYxmMtEyxjAhiGBECG45aTkmhArB9IiHgcmOMIK7TnZSCtmLllLcXC6X0+2cFf8jz4vNpjgcisOh3G6LPM+LIv8bFEXx+lqW5cunl2y3q6qqquv67Un9wW5XV1X9O9nVb/u63j87+6eXm21efi432+zaMMbFFaHThfw4fz9evjaEN4QiTDBhmJL3G72iI2qOqKE/T++ccXxFN0waQjNMvzT42zDCeNe9mIYRnIOU4rqmdU0xhk5NUmHKzpiyG0Kik+OkwxI9QNaKE+VH74M3i+qgV+Dnh4OHhwfMD+MS562enPNhDiGEZZ7DPIewLDCHbDJeWw9hHqSV3IpeqztoGx2sDlbrk2g7wYU2JsYUY4wppbTGGJW6Z5M2ozbPUQ8pxse/rOnBhZZKwfx8nkPwHpS6KzVIKTMh+65XxlrrvHXeewBYnBPG9taBMZ7y/npDDSajNs6DsW6c9B/9AoJy3IDYQOQnAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/30990787d9bfdd5e0ca5d0b6266ea81f/8ac56/jre-5.webp 240w,
+/blogger/static/30990787d9bfdd5e0ca5d0b6266ea81f/d3be9/jre-5.webp 480w,
+/blogger/static/30990787d9bfdd5e0ca5d0b6266ea81f/e46b2/jre-5.webp 960w,
+/blogger/static/30990787d9bfdd5e0ca5d0b6266ea81f/ec897/jre-5.webp 1366w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/30990787d9bfdd5e0ca5d0b6266ea81f/8ff5a/jre-5.png 240w,
+/blogger/static/30990787d9bfdd5e0ca5d0b6266ea81f/e85cb/jre-5.png 480w,
+/blogger/static/30990787d9bfdd5e0ca5d0b6266ea81f/d9199/jre-5.png 960w,
+/blogger/static/30990787d9bfdd5e0ca5d0b6266ea81f/ad00e/jre-5.png 1366w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/30990787d9bfdd5e0ca5d0b6266ea81f/d9199/jre-5.png&quot;
+            alt=&quot;chrome dev - console&quot;
+            title=&quot;chrome dev - console&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you press F11 Step into, calc method is pushed into call stack
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 930px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/f600c99249f9d89da252be8f511137f5/416ee/jre-6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABmklEQVQoz32Q626cMBCF/f4PA8uvKukbRGnVSlGA5bILu8CC73duhopNk26iJp9HI499jj0asPsE39/d3QWPj8HDQ/Dj57f774HnfdSA3ef4/haet/M9/78CcBX5Lzm4Wt77/169bW5LEMX7/HiMkyTLD09hlGR5GMVJmu+TNAzjNMuuZbZP0ucwyvJDFMf54ZBk2XMYgaaF1QWdq8ux7rKKIKaYEEIKzpmQUhstlZJKXJA4t7Rp2w4iTFndtvskBdM0QqTDJ/7rN4tTVZ71ue27lqKmIWykcmFqRXTsILH92HVdUZbl6VQUZVGUYFkWrXsuFi4WpV0/rv242mHLpt/CDqtQU3mqWgiFUsZaZYw2VhsLnHODHSZqONYI0t5Y52bn3HrDOI4YY8NNbwfn5rfzzby9Q7TlViklpRTS9P10a57nGULYnGqMsJRyfmUzSy5Jg9387rcPYCrKqq6bi7ZWb21vAdblur5km4sZGONKqWn61xTAhBLGCWUYE6n0yySkMghjTChlHBOKMJFSUsYQwlrraZrGK38A44x6X56iK+8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/f600c99249f9d89da252be8f511137f5/8ac56/jre-6.webp 240w,
+/blogger/static/f600c99249f9d89da252be8f511137f5/d3be9/jre-6.webp 480w,
+/blogger/static/f600c99249f9d89da252be8f511137f5/6eb96/jre-6.webp 930w&quot;
+              sizes=&quot;(max-width: 930px) 100vw, 930px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/f600c99249f9d89da252be8f511137f5/8ff5a/jre-6.png 240w,
+/blogger/static/f600c99249f9d89da252be8f511137f5/e85cb/jre-6.png 480w,
+/blogger/static/f600c99249f9d89da252be8f511137f5/416ee/jre-6.png 930w&quot;
+            sizes=&quot;(max-width: 930px) 100vw, 930px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/f600c99249f9d89da252be8f511137f5/416ee/jre-6.png&quot;
+            alt=&quot;chrome dev - console&quot;
+            title=&quot;chrome dev - console&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you press F11 step into 2 times, subtractTwo method is also pushed into call stack&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note : We are not done executing calc() instead calc() called subtractTwo() and call stack is keep track of execution of code. Clearly looking at call stack, I can say that we are subtractTwo().&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/64fe6faeef9da9e6b14e3f673883ef9f/7a1fb/jre-7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.41666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABe0lEQVQoz3WPaW7bMBBGef+zOEbtIkBkBW3+uMdoqliKuG8ih6vkQhYSJC3y8OFhyBmAHHT8gsPh+PT0/Xw+nn/d//h5f/h2+H8G7ff7uze2arvZvNutudu9Nz+BHpqmbdvTqb15pWmad6/FrXda/XjT4zrarkbDiEdCXzEZMP19IZhpyjiXmlBOuWBCUiYwE8/9iCl7xYRy2V2Gl37Q1iGpNJOmv8iu4396LZXXdgoxxpTfkoQ20oJzzgM47yljGBMIEWFMap1LSBUKQMl5rvNy/QxjjHLuIMSUQ0yT88ZOkwMEIaScnYqKB8LcZF0wIoac8nVLTAtlQgntDaSYSqnzsszLCgoxQkhjZ3HnBuz6Ufc9EypbfzVujZ4WLo0T1koLHj7+CEGMKSXDVUn5+gXew8ulZ0I4AB8ChLgFQYgf55Z13393nnykTFhrS63zPJdaS625FKS0kUorZYRU2ljnwXmwk+O3s9KaS6mNJZQNw0gI1dpsz3oIfwFpfEg3ojKR4wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/64fe6faeef9da9e6b14e3f673883ef9f/8ac56/jre-7.webp 240w,
+/blogger/static/64fe6faeef9da9e6b14e3f673883ef9f/d3be9/jre-7.webp 480w,
+/blogger/static/64fe6faeef9da9e6b14e3f673883ef9f/e46b2/jre-7.webp 960w,
+/blogger/static/64fe6faeef9da9e6b14e3f673883ef9f/a820a/jre-7.webp 1030w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/64fe6faeef9da9e6b14e3f673883ef9f/8ff5a/jre-7.png 240w,
+/blogger/static/64fe6faeef9da9e6b14e3f673883ef9f/e85cb/jre-7.png 480w,
+/blogger/static/64fe6faeef9da9e6b14e3f673883ef9f/d9199/jre-7.png 960w,
+/blogger/static/64fe6faeef9da9e6b14e3f673883ef9f/7a1fb/jre-7.png 1030w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/64fe6faeef9da9e6b14e3f673883ef9f/d9199/jre-7.png&quot;
+            alt=&quot;chrome dev - console&quot;
+            title=&quot;chrome dev - console&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you press F11 step into 2 times, subtractTwo method is done executing and popped out from call stack
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/cf21114a6110b28b8fb3ac3bf58ec490/1b19f/jre-8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 49.16666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABUUlEQVQoz3WQy27bMBBF+f8fo9gSus+uDdp1F7Vli+JTscxKHHL4UuQitlEErXNwwSHAewBiyOYTqmrz/Lz98X377aX++vJlu33QIU+fU1VPVbW5ntXDAqnrum6aurlTP6Spm/u4F25lcqQ9F7Kj/bHnP/eUCtX1jAvd9Yz2/PrEuFC7tusoo0xQJrjUu33LhCSns+HKUHbqxJkN02T9ZJ3z6DyCR4fBeTTTLEYw03Qaz1JpPbz+2u2V1sR7n2IJvwOcwzgGsNH7uK7r5crt4gCMMbkUcE7Id13rQUhJEDGFmG1ESN7Hy926fJQBoG0PUukQE4YYYrqF5JzLshSX7Oheh3GeLVgsZfkoz9YeKFd6sOBizhjiLSTl7K2DYX7Ly3pZl3fe/vl2jLHrxb49HI5UKjUDOESHSHIpKSZ0+Ff4n1IKl/J43bYaTmayZgYzwx93QwlUzkn2pgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/cf21114a6110b28b8fb3ac3bf58ec490/8ac56/jre-8.webp 240w,
+/blogger/static/cf21114a6110b28b8fb3ac3bf58ec490/d3be9/jre-8.webp 480w,
+/blogger/static/cf21114a6110b28b8fb3ac3bf58ec490/e46b2/jre-8.webp 960w,
+/blogger/static/cf21114a6110b28b8fb3ac3bf58ec490/5e0bb/jre-8.webp 991w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/cf21114a6110b28b8fb3ac3bf58ec490/8ff5a/jre-8.png 240w,
+/blogger/static/cf21114a6110b28b8fb3ac3bf58ec490/e85cb/jre-8.png 480w,
+/blogger/static/cf21114a6110b28b8fb3ac3bf58ec490/d9199/jre-8.png 960w,
+/blogger/static/cf21114a6110b28b8fb3ac3bf58ec490/1b19f/jre-8.png 991w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/cf21114a6110b28b8fb3ac3bf58ec490/d9199/jre-8.png&quot;
+            alt=&quot;chrome dev - console&quot;
+            title=&quot;chrome dev - console&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you press F11 step into again, calc method is done executing and popped out from call stack&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally you can press F8 ( resume script execution )&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;stack-overflow&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#stack-overflow&quot; aria-label=&quot;stack overflow permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stack Overflow&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 559px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/22094cc9f4119761f517ebd79f5ebff1/a65ce/jre-9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 67.08333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACgUlEQVQoz22S/08ScRjH7x9qa2bTu5MjMThkc2s1S0/uPkeLL6IZai4TEdrwl5aIdHccIIdrtPyBA1kpkny5MDysFbraIIzsH3G2E2K5tb1+eH55Pe/n8zwfCKFe/h/A9Iz579hWLI/9KuNKF2BmSf5gNJYjBGlU2B0TtICFUMCiNIuANug/RQ/FGidfeJZ8ejNzlWJmqFCJELKEkCeEHTKmAxwEUyxMMur7nMrEIYDpJZlWLxQwMODUYHXI7OsD7DWacZAhiRAyRPQ9EX1LxrSAg+7OxUeexIemNoamYsC1eWvmFUzzCM0jJh6hg4iJ76VDKM13mfhZKlwejeaIqEQIu8aYluahPhN32yH4hHfcZsFgj/QvZgcC3zS+r5rVar+vqrngpq+KrB3Pu0uHVrE4vlWyJfOOHf1CFroy7Odfb5+fNc/PTuNv0t3zWcPGbzzcwMMnFyiFPtxQC78WlyufHiQ+2FIfzYnio22DR4KuGwPkXLyYl9PJ7L3JCOrc0683tcGalq93wIN1LNJ46pXLtmR+Ii3ZUnszmUF3Qdl291hABXjMFO4e8auXcvh6Uxes6fh6B32whkUaC175wCrm7WnJltybvpBhiu1TbsMggEHJAHZZ1rZlJdnplWWLWBxPlaxibnpHkTtXRWkONgYwV6419uXkOhY5cXrlQ4so2bf2rWLBkTG4i4oMtz9GW8YjP3XBmjZY74ArY584vQcVc0KypfYtiYJje7Alt8OV5DXMndcLp3johy7c6KAPNbBo07Vc+WIRy+NbFatYms4o21aSqdabWdgYUC1kBpjvmtWqxn+k8R8N/OXG2vHw888PPSX7s/1JT2nCK/e7cn8AjemPWefGirYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/22094cc9f4119761f517ebd79f5ebff1/8ac56/jre-9.webp 240w,
+/blogger/static/22094cc9f4119761f517ebd79f5ebff1/d3be9/jre-9.webp 480w,
+/blogger/static/22094cc9f4119761f517ebd79f5ebff1/9f71c/jre-9.webp 559w&quot;
+              sizes=&quot;(max-width: 559px) 100vw, 559px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/22094cc9f4119761f517ebd79f5ebff1/8ff5a/jre-9.png 240w,
+/blogger/static/22094cc9f4119761f517ebd79f5ebff1/e85cb/jre-9.png 480w,
+/blogger/static/22094cc9f4119761f517ebd79f5ebff1/a65ce/jre-9.png 559w&quot;
+            sizes=&quot;(max-width: 559px) 100vw, 559px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/22094cc9f4119761f517ebd79f5ebff1/a65ce/jre-9.png&quot;
+            alt=&quot;stack overflow&quot;
+            title=&quot;stack overflow&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Most common way to create stack overflow is using recursion
+For eg&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;inception&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;inception&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;inception&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Execute above code in console tab in dev tools in chrome&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 596px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/6b30d3109da00a003ed5d357170642bd/699b7/jre-10.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50.416666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABW0lEQVQoz32OiW6DMBBE/f8fl7bBShA0IYCNzeEbcmHYaptUqqq2oydrZM+sl3AhuZBtPxjnWSMaIf04db0qay47payredP2g3a+qjnjQlsnOlVzKWRHKsZPVc0++1xI0XZ5URXCpqeW9ZMfzz6EME7T+eLD6MM4nS+D1jVrKiaIkG3DRd8ppcygnTa+KGvvg7Xudr/P8zzHiHyZGKMPoe160SmyLmu09yCcboyQjjFnzM05BwDrH4IvkbjgsMv14rwLwZ+nMcYI/2td4XMEma9XNQxaa2PsOE349Gv6W+epZSG3XXorimW/j5QueQ5JAlkGVQXHI1CK/nSCsoTDAc8HeQ5pCkqR1ZjVGIymKby+wnaLPkng5QXJMryXEowBrZ8ohVhLwFpwDsdnGZYpRZ8ksNnA2xu8v8N+D20L3mPyEX7wLFv7XIxS/KcsYbfDFSjFLQ4H6PtH+gcfJ+wzokQJEV8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/6b30d3109da00a003ed5d357170642bd/8ac56/jre-10.webp 240w,
+/blogger/static/6b30d3109da00a003ed5d357170642bd/d3be9/jre-10.webp 480w,
+/blogger/static/6b30d3109da00a003ed5d357170642bd/3cb93/jre-10.webp 596w&quot;
+              sizes=&quot;(max-width: 596px) 100vw, 596px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/6b30d3109da00a003ed5d357170642bd/8ff5a/jre-10.png 240w,
+/blogger/static/6b30d3109da00a003ed5d357170642bd/e85cb/jre-10.png 480w,
+/blogger/static/6b30d3109da00a003ed5d357170642bd/699b7/jre-10.png 596w&quot;
+            sizes=&quot;(max-width: 596px) 100vw, 596px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/6b30d3109da00a003ed5d357170642bd/699b7/jre-10.png&quot;
+            alt=&quot;Chrome Dev - console&quot;
+            title=&quot;Chrome Dev - console&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;garbage-collection&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#garbage-collection&quot; aria-label=&quot;garbage collection permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Garbage Collection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;JS is garbage collected language.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 650px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/81de774968c9a698193dac92ab4ae8bf/a6d36/jre-11.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACy0lEQVQoz12R/U8ScRzH+YP6oZWiHifqlkYuFTQJxfveHaL4gPgsmg9ZorXyAeTu4FDToZYKh4iEGKJmZmqlYOqam/Nhi5hYU4Lp1tqaNn9pe+/922vv9+fzZsGPXya0j8WTDK/flj7qzLS789wLld414YCdLdJwMIqDEhyU5KAEBIgLR0ku6IxFtRBKsloOvmj3Nmt2PcjOR+WOJ9e7nP3OjbumeB3GaDHBwXVRuI6NUpEIGYnrogAZJdbHC1VslGKjOha7yRDxoCeyqjeihI7ANDeyOq6L2q9lPrt5vx3K0UA5GiTrSYGso7BCI8tRZUhJQ2vycONtIO4A2FMWnKWFswlYrIUREi4ZjSszc0tNcWWm+HITXDbGVYx4a/LCPdIzlzLYVbBWWxeohn9VwwGhYAUAFoSRF0IJCKeTyG3UfIiY9jHmABnbz2d82QO7n1QZgb6YwCA/aBaGDIV+CdhLF/jE/PcIzoJQEgIkBIgYnL7VvYF1b0i71qVqj0TtEb1Y67Tr/HRSoD/yiEo8ZfKPR9GwSf69QuITpX0A/2CUhBAiWkLfUXvflL7+LLOsysYXSyb0FqrVajg0ioK01N8rOjZmHununjCpP/r5PmHqMnYFc4A2WkLz1BuWyum5Ytus3OYod2D61Soz860v7niYe7aSGlrET2wPw4v8EybDj4uXcjAWdDkdBxAxl8mzCrtXyqznMwtF9nqjbWCm5VAl8D+K+Wnmhxxo0F4UcglO3Q2hcfmy7D+4yztRMfW2yDpfbLWVuJqHxxSvrFsV8nBNYnAqIbgoP52Rns8VnBvvBRti1yXiq9qXNyd3b86VOzcKrJ5C65LC0TtBKS2W7Tb517rcLXXK78nMP7NpuwMiZxFwivKGQOnVwwAB4fqE5vn6sklVsUUltzQqbOlt0xmdVkQzIiWGng82OeiUrpZannIkGughnIIw6i+aZnrizzbGygAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/81de774968c9a698193dac92ab4ae8bf/8ac56/jre-11.webp 240w,
+/blogger/static/81de774968c9a698193dac92ab4ae8bf/d3be9/jre-11.webp 480w,
+/blogger/static/81de774968c9a698193dac92ab4ae8bf/c1dc5/jre-11.webp 650w&quot;
+              sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/81de774968c9a698193dac92ab4ae8bf/8ff5a/jre-11.png 240w,
+/blogger/static/81de774968c9a698193dac92ab4ae8bf/e85cb/jre-11.png 480w,
+/blogger/static/81de774968c9a698193dac92ab4ae8bf/a6d36/jre-11.png 650w&quot;
+            sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/81de774968c9a698193dac92ab4ae8bf/a6d36/jre-11.png&quot;
+            alt=&quot;Garbage Collection&quot;
+            title=&quot;Garbage Collection&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When JS allocates memory i.e. within a function we created object, object get stored somewhere in out memory heap, automatically when JS finish executing my function and let’s say we don’t want that object anymore&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JS is going to automatically clean it up for us and free up the memory heap So only the data that’s useful to us i.e. my program is still referring to will remain. This makes sure that we don’t use all the memory that is available as we know memory is limited&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;So in garbage collected language like JS, garbage collector frees up the heap memory and prevents what we call memory leaks&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;❓ &lt;em&gt;Does that mean you completely rely on garbage collector for heap memory management?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;❓ &lt;em&gt;How Garbage collection works in JS?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It works on Mark and Sweep algorithm&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 344px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/bdac8308e1439b845d5aa88e52937259/75d93/jre-12.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 113.75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAIAAACEf/j0AAAACXBIWXMAAA7DAAAOwwHHb6hkAAADcUlEQVQ4y31U25KrKBT1/3+qn87LVHd1J+2FOyiCokSjMQoazZRxqh/OmZn1QAHFZrH3WptAypxzkSvl/eycd85Pzk3O/cydc/O8zMvyWFfn3P0+ej/7ZZ4mF1DG397epJTP53Pbtucf2LZtHEdrLSEkz3OttTHGWnsbhoAx/uvXL631cW5d1/v9fnnBWtu27e1267ouz/MwDDHGuczLstRat9drIESKMU6SxHs/TVNZlnEcf35+AgDSNM2yTAixruu2bbfb7efSaZrmZQkgRFEUUUoP5m3b5nm+XC6UUmvt/QVrLef88/MzSRJKaZ7nUsrLpQk4F1qr33J+PB5d11VVdSzXdR3HsSiKI2FjTNd1k3MBQvi47zjnvQcAnM9nQghjjHOulNq2rWkaAACllDFWFIWU8nq9BoxzrfXB/Hw+l2WpqkoIIaU0xtR1fb1et23r+14IgTFGCCmlqqrq+j5AGH9/nyGER7aPx2NdV//CrrX327Y557quy7JMKZXneVEUxphhuO85AwAghPM8T9P0ssTv6LruUAEhRAgxxqRp2jTtzkwI4Zz/1Kbve2vtoUrbtsuyHLWo61pKmaapUmoYBud8QBnLXjiC+77/+vr6+PhgjEkpOed1XVtrhRDv7+8QQs65lBJC2LY7M0EQMsZ+mJ1zfd83TdP3vXPu8XgchRzHsW3bpmmGYTgq8g9zmqb/5e19/982nfcBoRQhxLn4n+A/W2XbNu/nQKkik6ooCmtrU1VVbWt7qeq6vbZF8dK5beqm0/WtadqiLHVRXrv+2vemqgNC2DmKEpyHIEVUIIgSiCAEu/5hDLAAOIe8/iuqANUhFAkiIMGlqbuuDwhmAMCEFBFQqSwJwhBRxngcxwBCkpYh0pDkMVKQFVgYnqrduCJbHusefDqFYRQRhJIEnPempVGShFEURjGAiZTZ+XRGmFJKRJoRxmACdVntLckIx4RA/LI85efvkDCGCEGEYcoQQpgwSpnIUoAIwKys9sL0t7vzc0DJ/uzddYwmSRKD14qKXGlK2SmM4hggTBHBCYTfUUyZaNvOz8v+h2GEv07nKI4RIecoooxDBL9OJ4SwLozef5yispeysqWprb0YUyld+nnZmfNcpZkUWV6YSmS51qXIJBWCEt52t3Fy93G636d9HN1wTCZ3G8bbMP4NEi3tithxjSAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/bdac8308e1439b845d5aa88e52937259/8ac56/jre-12.webp 240w,
+/blogger/static/bdac8308e1439b845d5aa88e52937259/4664d/jre-12.webp 344w&quot;
+              sizes=&quot;(max-width: 344px) 100vw, 344px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/bdac8308e1439b845d5aa88e52937259/8ff5a/jre-12.png 240w,
+/blogger/static/bdac8308e1439b845d5aa88e52937259/75d93/jre-12.png 344w&quot;
+            sizes=&quot;(max-width: 344px) 100vw, 344px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/bdac8308e1439b845d5aa88e52937259/75d93/jre-12.png&quot;
+            alt=&quot;Mark and Sweep algorithm - 1&quot;
+            title=&quot;Mark and Sweep algorithm - 1&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 361px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/29895603e49ae646dfd85d4da42e6c05/39d76/jre-13.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.83333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACaUlEQVQoz2VT7Y7TMBDs+z8GzwG/EAc66aBwapsmjRvHTRMndpom8ef6A/l6ICRWI0v+Md7xzuzGeb+s632ehZTagDb2fxhrDVhw4ByAAwtgrLUWNuD8Icuenr5S2scYwTnvfQj/ImjtpALGV8Yk5/o2KiFBaZ3Ix+Px6emz1iq+VfDB+6B1FCJaG4Rw5GKzTLy+Zvv96XxuhmFqGrGseiOVQuj87RsqiquUnlKT5+rHj3y3Q+czwZhV1eRcem6e/e3mxtGNo9XaG2s2UqqqwqcTuV5pjFFrN8+Oc1EUpK7Z7aYZM4QYhORuV+Z5Xde0aW5tK1aROus8z7PsQGmXNKdK4o1RCFkp00WpME0OY1pVtGmmrpumySptk+yyRGVZUkrfyJFz/fqK8rw+HCjGrG1X7+Oy3MvyVBQlQphS2rbXVYiNkJJcLsNAGRsenZcFMKZ1Tfv+xvk6jiqEKMSMUIVQRUhzvVJKqZAydT7mxfPzvq4776PWHiAYE5WKUkYhvHNBiNB1STbGlJChbW/DIKUyiZznxZcvh6JopYz3O6xrkDLc7zDPIERc1zCO/kKgrocsI0VxHYa1bZdVmHfZjPWcDw+fp2lsmssw9IwNfU+XZQ4B1nXGuOm6gVLedYzzURv9GFh5Op3+DCwQQrbb7X6/Ox7zpiHjyOZ5prTdbr//+vWzLE/nM8K4evxZH4/5fr/vur9WpQKAEBxj0PcOII5jSq1L4Ya3/AZtkmxVYdw0Td/3D/JDvPfpfHkxHz4snz6Jjx/lw/P3CD/ISpuakKqqOOc+BAuQducvwBnjtAZr3ftavcFCWozfFTJJeUt4FXIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/29895603e49ae646dfd85d4da42e6c05/8ac56/jre-13.webp 240w,
+/blogger/static/29895603e49ae646dfd85d4da42e6c05/c316d/jre-13.webp 361w&quot;
+              sizes=&quot;(max-width: 361px) 100vw, 361px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/29895603e49ae646dfd85d4da42e6c05/8ff5a/jre-13.png 240w,
+/blogger/static/29895603e49ae646dfd85d4da42e6c05/39d76/jre-13.png 361w&quot;
+            sizes=&quot;(max-width: 361px) 100vw, 361px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/29895603e49ae646dfd85d4da42e6c05/39d76/jre-13.png&quot;
+            alt=&quot;Mark and Sweep algorithm - 2&quot;
+            title=&quot;Mark and Sweep algorithm - 2&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 356px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/3b8670041a5896b9efcf5f8c423dd814/50ac3/jre-14.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACb0lEQVQoz1VTybKbMBD0/39KkltyyDlJ5eJDnOcAfpjFYBYJbYAA7VIK+1VeZUoXTamnp3tGB76uCGNK2bYJKZWUSkj5foSUUmmttNHmEXq/aCmlMfYwIPzt2/c4io0xIQTnXPg/nHPr6hgTfU8B4AgtjIll3UscKGXH47Gu6xCC9z6EoLXbNrttVgi3LGaaVJ7rywWcz0kUZU0zAMC6jittDoSinz/jHz8SQvg8qzQV1ys6nZI4zrOsqWsCwPKo6EdmGfMY63FU2tideUAoTa9VVWmtQwjGeCFM180vL4QQPo6SMVnkKknAn/ia5VUPcNOSvudamwMcUBRFWZY9wc/OjXFlKevaPjT7ZXXjqPp6aCuMwETRvKxmByOEy7Ks67uUKoSglM8zeDolSdKkKShLwJgOzi0QFHHUFgWsa9o2yzAopQ8QDnH8pyzfmJ3zGPO6BhAyQmaMuRA2BC8IAWWF780E4NRDweiumVB8Pue/ft0o3Ti382yWxS2L59zz2c2zXRfTdgZAcSv7+x22DYJgwmTb3UYYHY/n0yldV6m1l8prG4zZ7dU6KB2MDZgGAMU1u2fXvqowgBPCq1TmMAy4LPO2rZXaNQdr+ABG0DMINoo3gp0UYRkFIejekX6YIJkBUnzW5uF2kiRFUTw123Xt0jSPovL1lXbd1LaSUllXtCheX37f0lfU3IfqNrWdfqwnul7f5+wf4wpKBaWcEP6xs29hzJ6UMmhtndsNgwO6XC5FUby17f2/adtxnD594l+/zl8+jx8+qtvt3wNr7dNtlud50zTW2ncS7/cC1lrGHGOWEJVllvPnR3mAd+a/S0pJZV50phQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/3b8670041a5896b9efcf5f8c423dd814/8ac56/jre-14.webp 240w,
+/blogger/static/3b8670041a5896b9efcf5f8c423dd814/64477/jre-14.webp 356w&quot;
+              sizes=&quot;(max-width: 356px) 100vw, 356px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/3b8670041a5896b9efcf5f8c423dd814/8ff5a/jre-14.png 240w,
+/blogger/static/3b8670041a5896b9efcf5f8c423dd814/50ac3/jre-14.png 356w&quot;
+            sizes=&quot;(max-width: 356px) 100vw, 356px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/3b8670041a5896b9efcf5f8c423dd814/50ac3/jre-14.png&quot;
+            alt=&quot;Mark and Sweep algorithm - 3&quot;
+            title=&quot;Mark and Sweep algorithm - 3&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 350px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/0bc2fa2a80314882b60f7dc837185b69/13ae7/jre-15.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 77.08333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABoklEQVQoz42RW4/bIBCF/f9/1Fbqvkd2I0UF37CBOM7YkIsveBxCZdymaVpt9xPiAeZw5jBBVR3e3r7EcXy73ay1frs/cM75w9swjG3bKqWV0qfTaRxHY6YAmub9/SsAOOce1atgnmf0QAOU0iiKttstpRQAiqLo+iHgQu52uzAMjQcA0jQNw5AQwhjjnFdV5ZxDRKUUADSeaZrMhEHJeZLElNLV2RjTtm2WZZTSg6dt28vlwpeyhHMupQSAQ10PwxiUJc/zPMsy98T9ftd6ybYG6bquqipK6aqv6/p4PI6jCUouGGMP8TzPQogsy+I4zvN8v99rrR+Prn/xq8dpcU6SJE3T9RoRGWOEkLXttUn3Fz/FXCzO66gQ0Vo7z/Pk8fMw1lpEvF6vRw8AKKXO57MXcxFF0WazQcS12hgzPYGIWmvG2DdPkiRSyjzP/ai4kFKWZek+xFrbefq+77oOEZdRFUVJyHdCyHOeFz7ILKWURVG4//Hy4iL2zuTZ+UXxe/2ZYhFLKYUQn3H+R9un86U+QtOqYTSfWf0wmglZUSp9+gGiwVQKgGdqEwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/0bc2fa2a80314882b60f7dc837185b69/8ac56/jre-15.webp 240w,
+/blogger/static/0bc2fa2a80314882b60f7dc837185b69/a3432/jre-15.webp 350w&quot;
+              sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/0bc2fa2a80314882b60f7dc837185b69/8ff5a/jre-15.png 240w,
+/blogger/static/0bc2fa2a80314882b60f7dc837185b69/13ae7/jre-15.png 350w&quot;
+            sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/0bc2fa2a80314882b60f7dc837185b69/13ae7/jre-15.png&quot;
+            alt=&quot;Mark and Sweep algorithm - 4&quot;
+            title=&quot;Mark and Sweep algorithm - 4&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;eg 1.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token number&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; human &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;     
+&lt;span class=&quot;token number&quot;&gt;2.&lt;/span&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Nikhil&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;3.&lt;/span&gt;    &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;28&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;4.&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;5.&lt;/span&gt; human &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The object is no longer referenced by &lt;code class=&quot;language-text&quot;&gt;human&lt;/code&gt; variable that makes it eligible for garbage collection after code at line 5 is executed&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;eg 2.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;logHuman&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; human &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;     
+        &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Nikhil&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token literal-property property&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;28&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;human&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Once &lt;code class=&quot;language-text&quot;&gt;logHuman()&lt;/code&gt; is done executing, object referenced by human variable is eligible for garbage collection&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;other way, we can say scope for human object is over after execution of &lt;code class=&quot;language-text&quot;&gt;logHuman()&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;single-threaded&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#single-threaded&quot; aria-label=&quot;single threaded permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Single Threaded&lt;/h2&gt;
+&lt;p&gt;Being single threaded means that only one set of instruction is executed at a time, it is not doing multiple things
+Reason of being single threaded —&gt; is that it has only 1 call stack.&lt;/p&gt;
+&lt;p&gt;❓ &lt;em&gt;What is the issue with Single threaded language?&lt;/em&gt;
+eg&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token function&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;This is long running synchronous script - blocking interactivity untill callstack is empty &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Run above code in console tab in dev tools of chrome&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/13789054371df50b57b83e0a8e0a57c1/129e9/jre-16.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABUElEQVQY01WOWW4bMQxA5/53yUnauA4KxCiCxmN7domLpBFJzZIUk3z14YEEQXCpzEoWASQPiERIHNMsojEl4pDSrGqiKqpmVqws67qsq5ntplXOknMupRBzfa0fj8foPB572AN8t0opZppkmbMxcwghphRirFRVRMwsxDSNozs4ntj3/fN/np7Lz3fdFxE5RkS0CjGGGHPOzsPf6+1a35q2Q2I4QCT0XxkRmt455GVdOMbjmmn1aIfDbqiboW49UKKQPBBxavrxem/bYWr68e02TkAeyAEPkx8deoQqcePGGvwd3C1Qw3AP1NJ3xNb7R+A+xZFpkOyXJSB2CJ13jXdtVcLvML0k9xKnMw8n6n7wcArDiQ7P2J+x+4X9OcHrDBfhN3av5C/oLgx/KtXZctgkbjluM69fHqWmLfM2H+4aP23+sPlD05qoSFpX3Tb7B1fPwDxWDQajAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/13789054371df50b57b83e0a8e0a57c1/8ac56/jre-16.webp 240w,
+/blogger/static/13789054371df50b57b83e0a8e0a57c1/d3be9/jre-16.webp 480w,
+/blogger/static/13789054371df50b57b83e0a8e0a57c1/e46b2/jre-16.webp 960w,
+/blogger/static/13789054371df50b57b83e0a8e0a57c1/e3265/jre-16.webp 1161w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/13789054371df50b57b83e0a8e0a57c1/8ff5a/jre-16.png 240w,
+/blogger/static/13789054371df50b57b83e0a8e0a57c1/e85cb/jre-16.png 480w,
+/blogger/static/13789054371df50b57b83e0a8e0a57c1/d9199/jre-16.png 960w,
+/blogger/static/13789054371df50b57b83e0a8e0a57c1/129e9/jre-16.png 1161w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/13789054371df50b57b83e0a8e0a57c1/d9199/jre-16.png&quot;
+            alt=&quot;Chrome dev - console&quot;
+            title=&quot;Chrome dev - console&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;❓ &lt;em&gt;Why would anyone would like to block their application?&lt;/em&gt;
+❓ &lt;em&gt;So don’t you think, synchronous behavior of JS makes it less popular?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Most of the time you won’t be directly accessing of using JS Engine (which is synchronous).
+We need to introduce the idea of async code.
+It’s not only the JS engine executing our code but the JS Runtime (NodeJS implements something similar) which beyond just JS Engine&lt;/p&gt;
+&lt;h1 id=&quot;understanding-js-runtime&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#understanding-js-runtime&quot; aria-label=&quot;understanding js runtime permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Understanding JS Runtime&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 698px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/bd41e13735b2d5665a680511cc6ac0be/487bb/jre-17.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.41666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACm0lEQVQozwXBS1MSAQAA4P01zWSnmh7TwUMXL108eMxOajhYBKIgoLACKgrLQizGQ5CFheWxy8o+eT8WUBlByfGRFmrToamZLjVZMxZ9H/AMo8cJTsYXZorlF7tlfWd78aS1+OV4KWCwvxyxmuUWO7gCgZBNZ4e0EKSFHTobNO9G5sx2ELBd7Ng+t61XLeuFaOzl3QcZZx2zZn1oSG3QK4SU4TC3cMIqsrSV4RCBd+V5OMfZ8yxcFeYAyZrHzFZATjTx9RW+vsyLy1zTwjbM+fZaac+UadiYIktaH6E/boX6Q+TNEHHzGP97O9D3Mwig9WI+ullbZJur2aY5F3fTom111w53LCsBCHm94DBBb+gtx9P4t0H8+h56/SD86374+mHo9ybvBHRB1J8Uj0bCR8Oh02GMM+KXktGv6pnvY89pi1WytG5GPPSW8wn+czDZv4v9G0D7A2j/zmbfx7gAMIz64uLheLRnFc6laRbEu5rJult7NDvGOBAwuwOz+Vp6cSMZ2EhH/GTElcRcqag7EWU5PQBiqDdSvSKqf/oXn+rbnAHbgWcy3GrCp0wiyGqpDXPlPUrdoyZO0tJTSnpGSd9T0g+UVKTlgDEW8uGN3al0JVAUp0jWmPo4MXqsltSWp0iX21zah/lyV1g6Eky9vOFSUJ1Tk2db0sstSYVSAqag3y1UNlDeu8kHUeEtmQ3GU2gkHokmPGnGLlQQlvMkgnAco0gII5EY4cQJOEx4ChkVEA7Mn7HTHVbV5VX7vOqAnu0wmjanbTOag4yqS82+o5Q+3O+NecPJ9VdES52qaIiCNLEnMDoAWV9opuSl2HQFV5RjilpS3kjJxKSsScrqhLyeljcpWZVS8mldi5nulIztItjK6Tt5sMCr/gP9PqJjeNsMPQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/bd41e13735b2d5665a680511cc6ac0be/8ac56/jre-17.webp 240w,
+/blogger/static/bd41e13735b2d5665a680511cc6ac0be/d3be9/jre-17.webp 480w,
+/blogger/static/bd41e13735b2d5665a680511cc6ac0be/d1b7f/jre-17.webp 698w&quot;
+              sizes=&quot;(max-width: 698px) 100vw, 698px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/bd41e13735b2d5665a680511cc6ac0be/8ff5a/jre-17.png 240w,
+/blogger/static/bd41e13735b2d5665a680511cc6ac0be/e85cb/jre-17.png 480w,
+/blogger/static/bd41e13735b2d5665a680511cc6ac0be/487bb/jre-17.png 698w&quot;
+            sizes=&quot;(max-width: 698px) 100vw, 698px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/bd41e13735b2d5665a680511cc6ac0be/487bb/jre-17.png&quot;
+            alt=&quot;JS runtime&quot;
+            title=&quot;JS runtime&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To overcome single threaded nature of JS, JS Runtime came into picture.&lt;/p&gt;
+&lt;p&gt;JS Runtime comprises 3 main components&lt;/p&gt;
+&lt;h2 id=&quot;js-engine&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#js-engine&quot; aria-label=&quot;js engine permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JS Engine&lt;/h2&gt;
+&lt;p&gt;Already covered&lt;/p&gt;
+&lt;h2 id=&quot;browser-web-api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#browser-web-api&quot; aria-label=&quot;browser web api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Browser Web API&lt;/h2&gt;
+&lt;p&gt;These are application that can do variety of things like send Http request, listen to DOM events (click, change), setTimeout, localStorage sessionStoage, indexedDB etc) - all are async operations.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/65aa7f4ff02965777dadf0b34a93dbe5/37523/jre-18.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 79.16666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACCUlEQVQoz42TyY7kOAxE8/8/sRvoqcy0dskSSS3W6oadfZhDHSoOhHR4CESAfAil34zb3Ru3MyE9kDLu+eZmD0IZoc0e4LVxqY3z4c0EE9I473xgUj1eG3u+3kLp18a5VL//fP1h9teXcpCRCJFSyiEAUowpAyIgaeueb/b12h67D1Jqt/uY0lEbINZaR+9rrfM813muW+f/HketGCmV/JhzGKONNUetuWSK1HqnGHMpiBhjrLUex+G9jzGmlBGxltqoHb48zvNMlLz2kqndXtPpXXGlhQ4BtDFCCK01xfjhia4g4DFCvuCcMmwQnj6H7JV3zFpmd7kTJWOsEFJrfbvmGNNx1FprTNf3do4pvHzyxVjHJU8l9dFbb3OOOWfvo/dxHEdrrdbaex9j1Fpba7dzzMghUVVK786dP9a/zOG9RyhSK230mGOsudb8EVxyQQ4kMRjwyl+BjY8xx1sA8Jk55+9hkkgc8Q1JRuSYsBjj+CWmtVJKOudaa9/AOWX/3w4MLLPBgtvDxjalpNbGOUd30b331lopZc75jTMyJB+9D9Y6RAKAT73HVWxvvX/4z5Kda51r3c75ahuegTbIUPZAgnPGGOecCH9QmEAUCDwEHqKPPnitTQgBkT5LOmstOdN9KrUcw9qm1AVfG6MphwIhWePqUddac87PHGOMO+e/9xjXffS+WvsL1siUZOeNT5cAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/65aa7f4ff02965777dadf0b34a93dbe5/8ac56/jre-18.webp 240w,
+/blogger/static/65aa7f4ff02965777dadf0b34a93dbe5/d3be9/jre-18.webp 480w,
+/blogger/static/65aa7f4ff02965777dadf0b34a93dbe5/bc514/jre-18.webp 720w&quot;
+              sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/65aa7f4ff02965777dadf0b34a93dbe5/8ff5a/jre-18.png 240w,
+/blogger/static/65aa7f4ff02965777dadf0b34a93dbe5/e85cb/jre-18.png 480w,
+/blogger/static/65aa7f4ff02965777dadf0b34a93dbe5/37523/jre-18.png 720w&quot;
+            sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/65aa7f4ff02965777dadf0b34a93dbe5/37523/jre-18.png&quot;
+            alt=&quot;Chrome dev - console&quot;
+            title=&quot;Chrome dev - console&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+So browsers, make use of LLL like c++ instead of JS Engine and blocking the thread to perform these async operations in the background and these APIs are called Web APIs (which are asynchronous, meaning they do something in background and return the data back to JS Engine)&lt;/p&gt;
+&lt;h2 id=&quot;event-loop-and-callback-queue&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#event-loop-and-callback-queue&quot; aria-label=&quot;event loop and callback queue permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Event Loop and Callback Queue&lt;/h2&gt;
+&lt;p&gt;JS runtime in action&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;We have items on the call stack and as soon as something comes up like setTimeout i.e. not part of JS but part of Web API&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Call Stack is going to say “I have something that is not here for me, its for the web browser (web api). So its says hey web API this is something for you, I don’t know what to do with this, please take care of it” and Web API is going to say “Ahh I know that to do with setTimeout, let me take care of it and do that in the background”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once the (setTimeout ) async operation is served by Web API, it will push the data (usually a callback) of async operation into Callback Queue&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Event Loop continuously checks if there is any callback in the Callback Queue and the Call Stack is empty or not, If Call Stack is empty then Event loop is going to pop the callback from Callback Queue and push it into Call Stack and now JS Engine execute it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;eg1a&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;2&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;3&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;o/p
+1
+3
+2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;eg1b&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;1&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;2&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;3&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;o/p
+1
+3
+2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;eg2&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&quot;http://latentflip.com/loupe/?code=ZnVuY3Rpb24gYWNoaWV2ZUNob2NvbGF0ZSgpew0KICAgIGNvbnNvbGUubG9nKCdZb3UgYWNoaWV2ZWQgQ2hvY29sYXRlJyk7DQp9DQpmdW5jdGlvbiBjKCl7DQogICAgc2V0VGltZW91dChhY2hpZXZlQ2hvY29sYXRlLCAzMDAwKTsNCn0NCmZ1bmN0aW9uIGIoKXsNCiAgICBjKCk7DQp9DQpmdW5jdGlvbiBhKCl7DQogICAgYigpOw0KfQ0KYSgpOw%3D%3D!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Latent Flip tool&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;and paste&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;achieveChocolate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;You achieved Chocolate&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;achieveChocolate&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;❓ &lt;em&gt;Explain briefly &lt;strong&gt;JS&lt;/strong&gt; Vs &lt;strong&gt;JS Engine&lt;/strong&gt; Vs &lt;strong&gt;JS Runtime&lt;/strong&gt;?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;JS &gt; Musical Notes&lt;/p&gt;
+&lt;p&gt;JS Engine    &gt; Music Composer&lt;/p&gt;
+&lt;p&gt;JS Runtime &gt; Music Orchestra&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blogger/static/132c7bc3273023d121320ee424df4ad0/afd0b/jre-19.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.08333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACVklEQVQoz0WR208TQRSH+++YlIA03c50i9GCUuVSIFB6253ZFWgLrdvS0hakKGmFUlpbtzOzSEkgkUQRYkgwGm4GYrwkiMYHH0z0xQef/CNMFxuTLyeZh+/8zjljuHJv81ph6zrZ6Vzf7d7ed+4dBo7ejr//YE+tW3xViBnEBCICEdUhDepPg/Lr89SPs8T3LwPn546zk56Pb7wHr5wvtmGUQT+BmALEwIVZb6RBpEHEINZlY6xyKcwsd/Ls+cL9jXet7kdGV9k4VOH81CIyTmR1WWQQUYCqZn8BSGUgqVDUZZuXAq/WKS+dntKTb7+7ok87RouJxbSSSym5VHh+enY5WtSCVknjfMX+m6irL2ASlnSZGYDEAKZmkQVKx3H62h5cs4ikTSa2OlVeIldHKo7QMsAaEMpdPTFbX8rkyVsxq8sXqwNRvXG71C5XOKFqRZSXCC/pFRNeIhAxHtMmtzpT3tl9uc+JF8fTZSuiZr86kSxGZ8omH3WESrFcSsmmlWx6Yn4mU1KWWYjHrMlN1rT1n8ebEGlAJNb/yZjaRLVjpAoQteLGl2ACRNomq+1jD4Gkca7KVnTqayXhH8yaJM2Gq41kQZMnks7ROU5c4QTtsrfWYLXZs9birXECcQRX93YP/Ika71PN+HGLUPuXzIkrpcKDyanp5mG1J1IMZGZHZudGMxmUns+UlOlCwuhi7tTGn0/PspNheXAgHkuOh+4a9PFWeHfOLceFsRT05O0B1RlZ7I3keyP57vCSK57tVxZa0WpkOHmUCT0Zsntv2dIeVzEQ/Augsh429aaboQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/blogger/static/132c7bc3273023d121320ee424df4ad0/8ac56/jre-19.webp 240w,
+/blogger/static/132c7bc3273023d121320ee424df4ad0/d3be9/jre-19.webp 480w,
+/blogger/static/132c7bc3273023d121320ee424df4ad0/e46b2/jre-19.webp 960w,
+/blogger/static/132c7bc3273023d121320ee424df4ad0/99eb3/jre-19.webp 1153w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/blogger/static/132c7bc3273023d121320ee424df4ad0/8ff5a/jre-19.png 240w,
+/blogger/static/132c7bc3273023d121320ee424df4ad0/e85cb/jre-19.png 480w,
+/blogger/static/132c7bc3273023d121320ee424df4ad0/d9199/jre-19.png 960w,
+/blogger/static/132c7bc3273023d121320ee424df4ad0/afd0b/jre-19.png 1153w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/blogger/static/132c7bc3273023d121320ee424df4ad0/d9199/jre-19.png&quot;
+            alt=&quot;JS vs runtime vs engine&quot;
+            title=&quot;JS vs runtime vs engine&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
