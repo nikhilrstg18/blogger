@@ -1,0 +1,58 @@
+{
+  "title": "Blog by Nikhil Rustagi",
+  "url": "https://nihkilrstg18.github.io/folio",
+  "subtitle": "Solutions Architect • Web Developer • Quality Analyst • Blogger",
+  "copyright": "© All rights reserved.",
+  "googleAnalyticsId": "",
+  "disqusShortname": "",
+  "postsLimit": 4,
+  "pathPrefix": "/",
+  "menu": [
+    {
+      "label": "Blogs",
+      "path": "/"
+    },
+    {
+      "label": "About me",
+      "path": "/pages/about"
+    },
+    {
+      "label": "Skills",
+      "path": "/pages/skills"
+    },
+    {
+      "label": "Services",
+      "path": "/pages/services"
+    },
+    {
+      "label": "Projects",
+      "path": "/pages/projects"
+    },
+    {
+      "label": "Contact me",
+      "path": "/pages/contacts"
+    }
+  ],
+  "author": {
+    "name": "Nikhil Rustagi",
+    "photo": "/profile250.jpg",
+    "bio": "Solutions Architect • Web Developer • Quality Analyst • Blogger",
+    "contacts": {
+      "rss": "",
+      "email": "nikhilrstg18@gmail.com",
+      "github": "nikhilrstg18",
+      "facebook": "",
+      "telegram": "",
+      "twitter": "rustagi_nikhil",
+      "linkedin": "nikhil-rustagi",
+      "instagram": "",
+      "line": "",
+      "weibo": "",
+      "gitlab": "",
+      "medium": "nikhilrstg18",
+      "youtube": "",
+      "codepen": "",
+      "soundcloud": ""
+    }
+  }
+}
