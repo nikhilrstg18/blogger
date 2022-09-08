@@ -34,7 +34,7 @@ JavaScript, often abbreviated JS, is a programming language that is one of the c
 
 # JavaScript 101
 
-> **What is JS** ? 
+> **What is JS** ?  
 
 JavaScript (JS) is a
 - **dynamic** (aka loosley typed)

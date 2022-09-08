@@ -1,6 +1,6 @@
 {
   "title": "Blog by Nikhil Rustagi",
-  "url": "https://nihkilrstg18.github.io/folio",
+  "url": "https://nihkilrstg18.github.io",
   "subtitle": "Solutions Architect • Web Developer • Quality Analyst • Blogger",
   "copyright": "© All rights reserved.",
   "googleAnalyticsId": "",
@@ -35,7 +35,7 @@
   ],
   "author": {
     "name": "Nikhil Rustagi",
-    "photo": "/profile250.jpg",
+    "photo": "/profile250.png",
     "bio": "Solutions Architect • Web Developer • Quality Analyst • Blogger",
     "contacts": {
       "rss": "",
