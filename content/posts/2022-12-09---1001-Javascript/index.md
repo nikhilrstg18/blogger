@@ -37,14 +37,14 @@ JavaScript, often abbreviated JS, is a programming language that is one of the c
 > **What is JS** ?  
 
 JavaScript (JS) is a
-- **dynamic** (aka loosley typed)
+- **dynamic** (aka loosely typed)
 - **interpreted** or **compiled** (JIT compiled)
 - **garbage-collected**
 - **single-threaded**
 - **multi-paradigm** (functional and object oriented)
 - programming language with **functions as first-class citizens**.
 
-  > Note: you will be able to elaborate and explain javascript with more clarity by end of this section
+> Note: you will be able to elaborate and explain javascript with more clarity by end of this section
   
 While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. 
 

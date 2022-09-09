@@ -27,3 +27,4 @@ jobs:
           access_token: ${{ secrets.MEDIUM_ACCESS_TOKEN }}
           markdown_file: ${{ steps.posts.outputs.post0 }}
           base_url: https://nikhilrstg18.github.io/blogger
+          post_url: https://nikhilrstg18.github.io/blogger/posts
