@@ -1,18 +1,18 @@
 ---
-title: Getting Started with Javascript
-date: "2022-09-01T23:46:37.121Z"
+title: Javascript Fundamental - 101
+date: "2022-09-12T23:46:37.121Z"
 template: "post"
 draft: false
-slug: "1001-javascript"
+slug: "js-101"
 category: "JavaScript"
 tags:
-  - "JavaScript"
-  - "Web Development"
+  - "Javascript"
+  - "fundamental"
 description: "JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.."
 socialImage: "/media/social.jpg"
 ---
 
-JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries..
+JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.
 
 ![Javascript code](./media/social.jpg)
 
@@ -34,40 +34,37 @@ JavaScript, often abbreviated JS, is a programming language that is one of the c
 
 # JavaScript 101
 
-> **What is JS** ?  
+> **What is JS**?  
 
-JavaScript (JS) is a
+JavaScript (JS) is
 - **dynamic** (aka loosely typed)
 - **interpreted** or **compiled** (JIT compiled)
 - **garbage-collected**
 - **single-threaded**
-- **multi-paradigm** (functional and object oriented)
-- programming language with **functions as first-class citizens**.
-
+- **multi-paradigm** (functional and object-oriented)
+- a programming language with **functions as first-class citizens**.
 > Note: you will be able to elaborate and explain javascript with more clarity by end of this section
-  
 While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. 
 
 Read more @ [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
-> When and Who created JS?
+> **When and Who created JS**?
 
 In 1995, **Brendon Eich** created JS to add interactivity in  egendary Netscape Navigator web browser.
 
+> **Why learn JS**?
 
-> Why learn JS?
-
-JS was popular, is popular and with its ongoing evolution JS will remain popular.\
-See most popular technology @ [stackoverflow survey 2022](https://survey.stackoverflow.co/2022/#technology-most-popular-technologies)
-
-
-> Where to use JS?
-
-JS runs both in  and outside web browser.
+JS was popular, is popular and with its ongoing evolution, JS will remain popular.\
+See most popular technology @ [StackOverflow survey 2022](https://survey.stackoverflow.co/2022/#technology-most-popular-technologies)
 
 
-> How JS works?
+> **Where to use JS**?
+
+JS runs both in and outside the web browser.
+
+
+> **How JS works**?
 
 To understand how JS works, you need to understand 
 - JS Engine 
@@ -75,18 +72,18 @@ To understand how JS works, you need to understand
 
 # Understanding JS Engine
 
-Almost everyone who has worked with JS, as heard about JS Engine 
-- JS is a single threaded language that uses callbacks or Callback-Queue
+Almost everyone who has worked with JS, has heard about JS Engine 
+- JS is a single-threaded language that uses callbacks or Callback-Queue
 - JS is interpreted or compiled?
 
 
 ![without JS Engine](./media/jse-1.png)
 
-So if your write some English like statement/code in your JS file. And if you directly provide this JS file as input to your computer, it might raise a flag that it does understand JS language.
+So if you write some English-like statement/code in your JS file. And if you directly provide this JS file as input to your computer, it might raise a flag that it does understand JS language.
 
 ![With JS Engine](./media/jse-3.png)
 
-JS engine is going to take it as input and convert it to output that is more familiar for a machine (machine code)
+JS engine is going to take it as input and convert it to output that is more familiar to a machine (machine code)
 
 concepts covered
 - Inside JS Engine (Google's V8)
@@ -97,41 +94,40 @@ concepts covered
 
 ## Inside JS Engine
 
-So,  learnt thatS Engine is the one who takes our JS file/code and converts that to machine code to be understandable by machine
-Let's look inside popular engine used by chrome and nodejs i.e. Google's V8 JS Engine
+So,  we learned that JS Engine is the one who takes our JS file/code and converts that to machine code to be understandable by machine
+Let's look inside the popular engine used by chrome and NodeJS i.e. Google's V8 JS Engine
 
 ![Inside JS Engine](./media/jse-4.png)
 
-So when you give a JS file to JS engine to run it
+So when you give a JS file to the JS engine to run it
 
-- **Parser**: It performs lexical analysis, which breaks the code into something called tokens based JS grammar /keywords to identify the meaning of code to determine what code is trying to do
+- **Parser**: It performs lexical analysis, which breaks the code into something called tokens-based JS grammar /keywords to identify the meaning of code to determine what code is trying to do
 
-- **AST**: These tokens then forms an AST (Abstract Syntax Tree). Tool > https://astexplorer.net/
-AST looks gibberish to Human but it allows JS Engine to understand what code is trying to do
+- **AST**: These tokens then form an AST (Abstract Syntax Tree). Tool > https://astexplorer.net/ >  AST looks gibberish to humans but it allows JS Engine to understand what code is trying to do
 
-- **Interpreter**: Translate the source code into machine code, does it by reading line by line execute it. Of course, the source code still needs to be converted into machine code, but it simply happens right before it’s executed and not ahead of time
+- **Interpreter**: Translate the source code into machine code, do it by reading line by line execute it. Of course, the source code still needs to be converted into machine code, but it simply happens right before it’s executed and not ahead of time
   
     ![Interpreter](./media/jse-6.png)
 
     for eg 
     ```javascript
-    function someCalculation(x y){
+    function sumCalculation(x y){
         return x + y;
     }
-    for(let i = 0; I < 1000; i++){
-        someCalculation(5,4);
+    for(let i = 0; i < 1000; i++){
+        sumCalculation(5,4);
     }
     ```
-  Interpreter starts reading the source code from top to bottom
-  first it read line 1 and understands that the function **`someCalculation`** is declared and then line 2 then line 3 and understands the function body and finally executes it before jumping to line 4 
+  The interpreter starts reading the source code from top to bottom
+  first it read line 1 and understands that the function **`sumCalculation`** is declared and then line 2 then line 3 and understands the function body and finally executes it before jumping to line 4 
 
-  and at line it reads for keyword and understands that the for   loop is declared follows be reading line 4 and line 6 and understands the expression that it need to iterate and finally executes for-loop before jumping to next line of the source code (which EOF in our case)
+  and at the line, it reads for keyword and understands that the for loop is declared follows be reading line 4 and line 6 and understands the expression that it needs to iterate and finally executes for-loop before jumping to the next line of the source code (which EOF in our case)
 
-  then for each iteration of loop its going to execute line 1 then line 2 then line 3. 
+  then for each iteration of the loop it's going to execute line 1 then line 2 then line 3. 
 
-  > **Note** in this approach even though result of someCalculation remains same it execute the function for each iteration
+  > **Note** in this approach even though the result of someCalculation remains the same it executes the function for each iteration
 
-- **Profiler**: Covered in next topic
+- **Profiler**: Covered in the next topic
 
 - **Compiler**: Translate the source code into machine code, does it by reading source code in one go and execute it i.e. Compiler works ahead of time to create a translation of the source code which is translated into bytecode(closely related to machine code i.e. understandable my machine)
 
@@ -146,7 +142,7 @@ AST looks gibberish to Human but it allows JS Engine to understand what code is 
         return x + y;
     }
 
-    for(let i = 0; I < 1000; i++){
+    for(let i = 0; i < 1000; i++){
         console.log(someCalculation(5,4));
     }
 
@@ -154,25 +150,26 @@ AST looks gibberish to Human but it allows JS Engine to understand what code is 
 
     output of compiler ( optimized bytecode )
 
-    ```javascript
+    ```javasscriptt
     function someCalculation(x y){
         return x + y;
     }
 
-    for(let i = 0; I < 1000; i++){
+    for(let i = 0; i < 1000; i++){
         console.log(9));
     }
     ```
 
-  > Interpreter or compiler ?
+  > Interpreter or compiler?
 
-  Both have their pros and cons
-  | Interpeter                                                                                       | Compiler                                                                                   |
-  | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-  | Faster to get up and running                                                                     | Slower to get up and running                                                               |
-  | But it get slower in execution as it doesn't do any kind of optimization in case of huge JS code | But it is faster in execution as it does some sort of optimization in case of huge JS code |
 
-**Can we have best of both worlds ?**
+Both have their pros and cons
+| Interpeter                                                                                                                              | Compiler                                                                                                                          |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| - Faster to get up and running <br />- But it get slower in execution as it doesn't do any kind of optimization in case of huge JS code | - Slower to get up and running <br />- But it is faster in execution as it does some sort of optimization in case of huge JS code |
+
+
+**Can we have the best of both worlds?**
 
 JIT compiler, Let's understand how Google's v8 engine does this
 
@@ -182,18 +179,18 @@ Initially
 
 Source code -> **Parse** -> **AST** -> **Interpreter** -> **bytecode** (aka ignition i.e. to execute our code asap) 
 
-- **Profiler**: Monitors and watches the code as it runs and makes notes on how we can optimize this code : how many times it has been run? what types are used? How possible optimize this?
+- **Profiler**: Monitors and watches the code as it runs and makes notes on how we can optimize this code: how many times it has been run? what types are used? How possible to optimize this?
 
-  Now as the bytecode from interpreter is running, a copy of source code is given to compiler along with the optimization notes from profiler and generates optimized bytecode. 
+  Now as the bytecode from the interpreter is running, a copy of the source code is given to the compiler along with the optimization notes from the profiler and generates the optimized bytecode. 
 
-  This means the JS code given to v8 engine is going to gradually improve because profiler and compiler are constantly improving bytecode as the app is running i.e. why called as JIT compiler
+  This means the JS code given to the V8 engine is going to gradually improve because the profiler and compiler are constantly improving bytecode as the app is running i.e. why called as JIT compiler
 
-  Finally it mixes and matches or replace bytecode from interpreter with optimized bytecode from compiler to run on machine and this constantly run through this loop 
+  Finally, it mixes and matches or replaces bytecode from the interpreter with optimized bytecode from compiler to run on the machine and this constantly runs through this loop 
   Compiler as the app is running, takes the bytecode
 
-- **Interpreter** JS is interpreted ?
+- **Interpreter** JS is interpreted?
 
-  Yes, Initially when JS first came out, JS engine like SpiderMonkey created by Brendon Eich that interpreted JS to bytecode and that engine was able to run inside our browser to tell our computers what to do. But things are evolved now to use profiler and compiler aka JIT compiler to optimize this code 
+  Yes, Initially when JS first came out, a JS Engine like SpiderMonkey created by Brendon Eich interpreted JS to bytecode and that engine was able to run inside our browser to tell our computers what to do. But things are evolved now to use profiler and compiler aka JIT compiler to optimize this code 
 	
 - **Compiler** JS is compiled?
   
@@ -204,7 +201,7 @@ Source code -> **Parse** -> **AST** -> **Interpreter** -> **bytecode** (aka igni
   Yes, eg v8 engine by google
 
 
-So far we learnt that JS Engine does a lot of work for us, but more important thing is reading our code and executing it which has 2 most important steps
+So far we learned that JS Engine does a lot of work for us, but the more important thing is reading our code and executing it which has 2 most important steps
 - Heap 
 - Call Stack
 
@@ -212,7 +209,7 @@ So far we learnt that JS Engine does a lot of work for us, but more important th
 
 ![Heap](./media/jre-1.png)
 
-Place to store and write information (variables, objects, etc) --> Memory Heap --> used by JS engine for memory allocation
+A place to store and write information (variables, objects, etc) --> Memory Heap --> used by JS engine for memory allocation
 
 ```javascript
 const number = 100; // allocate memory for number
@@ -231,7 +228,7 @@ for(var i = 5; i>1 ; i++){
 }
 ```
 
-Execute above code in console tab of dev tools in chrome and see what happens 
+Execute the above code in the console tab of dev tools in chrome and see what happens 
 
 ![Aw, Snap in modern browser](./media/jre-2.png)
 
@@ -259,7 +256,7 @@ setInterval(()=>{
 # Understanding Call Stack
 ![call stack](./media/jre-3.png)
 
-Place to store and keep track of what happening line by line on our code --> Call Stack - used by JS engine to keep track of where you code is, in execution
+A place to store and keep track of what is happening line by line on our code --> Call Stack - used by JS engine to keep track of where your code is, in execution
 ```javascript
 function subtractTwo(num){
     return num-2;
@@ -279,19 +276,20 @@ calc();
   ![chrome dev - console](./media/jre-5.png)
 - When you press F11 Step into, calc method is pushed into call stack
   ![chrome dev - console](./media/jre-6.png)
-- When you press F11 step into 2 times, subtractTwo method is also pushed into call stack
-  > Note : We are not done executing calc() instead calc() called subtractTwo() and call stack is keep track of execution of code. Clearly looking at call stack, I can say that we are subtractTwo().
+- When you press F11 step 2 times, subtractTwo method is also pushed into the call stack
+  > Note: We are not done executing calc() instead calc() is called subtractTwo() and the call stack keeps track of the execution of code. Clearly looking at the call stack, I can say that we are subtractTwo().
 
   ![chrome dev - console](./media/jre-7.png)
-- When you press F11 step into 2 times, subtractTwo method is done executing and popped out from call stack
+- When you press the F11 step 2 times, subtractTwo method is done executing and popped out from call stack
   ![chrome dev - console](./media/jre-8.png)
-- When you press F11 step into again, calc method is done executing and popped out from call stack
-- Finally you can press F8 ( resume script execution )
+- When you press F11 step again, the calc method is done executing and popped out from the call stack
+- Finally, you can press F8 ( resume script execution )
 
 ## Stack Overflow 
+
 ![stack overflow](./media/jre-9.png)
 
-Most common way to create stack overflow is using recursion
+The most common way to create stack overflow is using recursion
 For eg
 
 ```javascript
@@ -300,25 +298,25 @@ function inception(){
 }
 inception();
 ```
-Execute above code in console tab in dev tools in chrome
+Execute the above code in the console tab in dev tools in chrome
 
 ![Chrome Dev - console](./media/jre-10.png)
 
 ## Garbage Collection
 
-- JS is garbage collected language.
+- JS is garbage-collected language.
   
   ![Garbage Collection](./media/jre-11.png)
 
-- When JS allocates memory i.e. within a function we created object, object get stored somewhere in out memory heap, automatically when JS finish executing my function and let's say we don't want that object anymore
+- When JS allocates memory i.e. within a function we created object, the object gets stored somewhere in our memory heap, automatically when JS finishes executing my function and let's say we don't want that object anymore
 - JS is going to automatically clean it up for us and free up the memory heap So only the data that's useful to us i.e. my program is still referring to will remain. This makes sure that we don't use all the memory that is available as we know memory is limited
 - So in garbage collected language like JS, garbage collector frees up the heap memory and prevents what we call memory leaks
 
-❓ *Does that mean you completely rely on garbage collector for heap memory management?*
+❓ *Does that mean you completely rely on a garbage collector for heap memory management?*
 
 ❓ *How Garbage collection works in JS?*
 
-It works on Mark and Sweep algorithm
+It works on Mark and Sweeps algorithm
 
 ![Mark and Sweep algorithm - 1](./media/jre-12.png)
 
@@ -349,15 +347,18 @@ function logHuman(){
 }
 ```
   > Once `logHuman()` is done executing, object referenced by human variable is eligible for garbage collection
-other way, we can say scope for human object is over after execution of `logHuman()`
+In another way, we can say the scope for the human object is over after the execution of `logHuman()`
 
 ## Single Threaded
 
-Being single threaded means that only one set of instruction is executed at a time, it is not doing multiple things
-Reason of being single threaded --> is that it has only 1 call stack.
+![single thread](./media/jre-20.png)
+
+Being single-threaded means that only one set of the instructions is executed at a time, it is not doing multiple things
+Reason for being single-threaded --> is that it has only 1 call stack.
 
 ❓ *What is the issue with Single threaded language?*
- eg
+
+eg
 
 ```javascript
 alert('This is long running synchronous script - blocking interactivity untill callstack is empty ');
@@ -367,10 +368,11 @@ Run above code in console tab in dev tools of chrome
 
 ![Chrome dev - console](./media/jre-16.png)
 
-❓ *Why would anyone would like to block their application?*
-❓ *So don’t you think, synchronous behavior of JS makes it less popular?*
+❓ *Why would anyone like to block their application?*
 
-Most of the time you won't be directly accessing of using JS Engine (which is synchronous). 
+❓ *So don’t you think, the synchronous behavior of JS makes it less popular?*
+
+Most of the time you won't be directly accessing or using JS Engine (which is synchronous). 
 We need to introduce the idea of async code.
 It's not only the JS engine executing our code but the JS Runtime (NodeJS implements something similar) which beyond just JS Engine 
 
@@ -379,7 +381,7 @@ It's not only the JS engine executing our code but the JS Runtime (NodeJS implem
 
 ![JS runtime](./media/jre-17.png)
 
-To overcome single threaded nature of JS, JS Runtime came into picture. 
+To overcome the single-threaded nature of JS, JS Runtime came into the picture. 
 
 JS Runtime comprises 3 main components
 
@@ -398,11 +400,11 @@ JS runtime in action
 
 - We have items on the call stack and as soon as something comes up like setTimeout i.e. not part of JS but part of Web API
 
-- Call Stack is going to say "I have something that is not here for me, its for the web browser (web api). So its says hey web API this is something for you, I don't know what to do with this, please take care of it" and Web API is going to say "Ahh I know that to do with setTimeout, let me take care of it and do that in the background" 
+- Call Stack is going to say "I have something that is not here for me, it's for the web browser (Web API). So it says hey Web API this is something for you, I don't know what to do with this, please take care of it" and Web API is going to say "Ahh I know that to do with setTimeout, let me take care of it and do that in the background" 
 
-- Once the (setTimeout ) async operation is served by Web API, it will push the data (usually a callback) of async operation into Callback Queue 
+- Once the (setTimeout) the async operation is served by Web API, it will push the data (usually a callback) of async operation into Callback Queue 
 
-- Event Loop continuously checks if there is any callback in the Callback Queue and the Call Stack is empty or not, If Call Stack is empty then Event loop is going to pop the callback from Callback Queue and push it into Call Stack and now JS Engine execute it.
+- Event Loop continuously checks if there is any callback in the Callback Queue and whether the Call Stack is empty or not, If Call Stack is empty then the Event loop is going to pop the callback from Callback Queue and push it into Call Stack and now JS Engine execute it.
  eg1a
 ```javascript
 console.log('1');
