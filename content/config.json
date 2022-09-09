@@ -13,20 +13,12 @@
       "path": "/"
     },
     {
+      "label": "Categories",
+      "path": "/categories"
+    },
+    {
       "label": "About me",
       "path": "/pages/about"
-    },
-    {
-      "label": "Skills",
-      "path": "/pages/skills"
-    },
-    {
-      "label": "Services",
-      "path": "/pages/services"
-    },
-    {
-      "label": "Projects",
-      "path": "/pages/projects"
     },
     {
       "label": "Contact me",
