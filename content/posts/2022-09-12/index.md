@@ -58,7 +58,6 @@ In 1995, **Brendon Eich** created JS to add interactivity in  egendary Netscape 
 JS was popular, is popular and with its ongoing evolution, JS will remain popular.\
 See most popular technology @ [StackOverflow survey 2022](https://survey.stackoverflow.co/2022/#technology-most-popular-technologies)
 
-
 > **Where to use JS**?
 
 JS runs both in and outside the web browser.
@@ -150,7 +149,7 @@ So when you give a JS file to the JS engine to run it
 
     output of compiler ( optimized bytecode )
 
-    ```javasscriptt
+    ```javascript
     function someCalculation(x y){
         return x + y;
     }
