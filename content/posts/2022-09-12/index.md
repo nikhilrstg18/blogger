@@ -1,5 +1,5 @@
 ---
-title: Javascript Fundamental - 101
+title: Javascript - 101 | Engine & Runtime
 date: "2022-09-12T23:46:37.121Z"
 template: "post"
 draft: false
@@ -16,20 +16,13 @@ JavaScript, often abbreviated JS, is a programming language that is one of the c
 
 ![Javascript code](./media/social.jpg)
 
+| [JavaScript 101](#javascript-101)                         | Topics                                                                                                                                            |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**Understanding JS Engine**](#understanding-js-engine)   | [1. Inside JS Engine](#inside-js-engine)                                                                                                          |
+| [**Understanding Heap**](#understanding-heap)             | [1. Memory Leaks](#memory-leaks)                                                                                                                  |
+| [**Understanding Call Stack**](#understanding-call-stack) | [1. Stack Overflow](#stack-overflow)<br /> [2. Garbage Collection](#garbage-collection)<br /> [3. Single Threaded](#single-threaded)              |
+| [**Understanding JS Runtime**](#understanding-js-runtime) | [1. JS Engine](#js-engine)<br /> [2. Browser Web API](#browser-web-api) <br /> [3. Event Loop and Callback Queue](#event-loop-and-callback-queue) |
 
-- [JavaScript 101](#javascript-101)
-- [Understanding JS Engine](#understanding-js-engine)
-  - [Inside JS Engine](#inside-js-engine)
-- [Understanding Heap](#understanding-heap)
-  - [Memory Leaks](#memory-leaks)
-- [Understanding Call Stack](#understanding-call-stack)
-  - [Stack Overflow](#stack-overflow)
-  - [Garbage Collection](#garbage-collection)
-  - [Single Threaded](#single-threaded)
-- [Understanding JS Runtime](#understanding-js-runtime)
-  - [JS Engine](#js-engine)
-  - [Browser Web API](#browser-web-api)
-  - [Event Loop and Callback Queue](#event-loop-and-callback-queue)
 
 
 # JavaScript 101

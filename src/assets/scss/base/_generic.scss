@@ -124,6 +124,7 @@ ul {
 p {
   @include line-height(1);
   @include margin-bottom(1);
+  text-align: justify;
 }
 
 blockquote {
@@ -136,6 +137,9 @@ figure {
   display: block;
   height: auto;
   width: 100%;
+}
+th{
+  text-align: left;
 }
 
 figcaption {
