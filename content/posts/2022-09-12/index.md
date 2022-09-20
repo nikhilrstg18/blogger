@@ -4,11 +4,12 @@ date: "2022-09-12T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "js-101"
-category: "JavaScript"
+category: "Javascript Fundamental"
 tags:
   - "Javascript"
-  - "fundamental"
-description: "JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.."
+  - "Engine"
+  - "Runtime"
+description: "JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries..."
 socialImage: "/media/social.jpg"
 ---
 

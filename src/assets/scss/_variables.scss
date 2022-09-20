@@ -2,8 +2,10 @@
 @use "sass:color";
 
 $color-base: hsl(0, 0%, 13%);
-$color-primary: hsl(220, 100%, 68%);
-$color-secondary: hsl(31, 92%, 62%);
+// $color-primary: hsl(220, 100%, 68%);
+$color-primary: #7F00FF;
+// $color-secondary: hsl(31, 92%, 62%);
+$color-secondary: #E100FF;
 
 $color-white: hsl(0, 0%, 100%);
 $color-gray: color.adjust($color-base, $lightness: 40%);

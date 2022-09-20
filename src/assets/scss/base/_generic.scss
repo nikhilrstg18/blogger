@@ -141,6 +141,9 @@ figure {
 th{
   text-align: left;
 }
+th td:nth-last-child(even){
+  text-align: center;
+}
 
 figcaption {
   @include line-height(0.75);
