@@ -150,7 +150,7 @@ export default {
       options: {
         name: config.title,
         short_name: config.title,
-        theme_color: "hsl(31, 92%, 62%)",
+        theme_color: "#E100FF",
         background_color: "hsl(0, 0%, 100%)",
         icon: "content/nlogo.png",
         display: "standalone",

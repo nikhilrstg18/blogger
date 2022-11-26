@@ -10,12 +10,12 @@ tags:
   - "Operators"
   - "Expressions"
 description: "JS Operator is a symbol that tells the compiler or interpreter to perform specific mathematical, relational or logical operation and produce final result..."
-socialImage: "/media/social.jpg"
----
+socialImage: "/media/js102.gif"
+--- 
 
 JS Operator is a symbol that tells the compiler or interpreter to perform specific mathematical, relational or logical operation and produce final result.
 
-![Javascript code](./media/social.jpg)
+![Javascript code](./media/js102.gif)
 
 
  | Section            | Topic                                                                                                                                                                                                                                                                      |

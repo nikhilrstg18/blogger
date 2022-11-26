@@ -10,12 +10,12 @@ tags:
   - "Engine"
   - "Runtime"
 description: "JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries..."
-socialImage: "/media/social.jpg"
+socialImage: "/media/js101.gif"
 ---
 
 JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.
 
-![Javascript code](./media/social.jpg)
+![Javascript code](./media/js101.gif)
 
 | [JavaScript 101](#javascript-101)                         | Topics                                                                                                                                            |
 | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -70,11 +70,11 @@ Almost everyone who has worked with JS, has heard about JS Engine
 - JS is interpreted or compiled?
 
 
-![without JS Engine](./media/jse-1.png)
+![without JS Engine](./media/jse-1.gif)
 
 So if you write some English-like statement/code in your JS file. And if you directly provide this JS file as input to your computer, it might raise a flag that it does understand JS language.
 
-![With JS Engine](./media/jse-3.png)
+![With JS Engine](./media/jse-2.gif)
 
 JS engine is going to take it as input and convert it to output that is more familiar to a machine (machine code)
 
@@ -90,7 +90,7 @@ concepts covered
 So,  we learned that JS Engine is the one who takes our JS file/code and converts that to machine code to be understandable by machine
 Let's look inside the popular engine used by chrome and NodeJS i.e. Google's V8 JS Engine
 
-![Inside JS Engine](./media/jse-4.png)
+![Inside JS Engine](./media/jse-3.gif)
 
 So when you give a JS file to the JS engine to run it
 
@@ -166,7 +166,7 @@ Both have their pros and cons
 
 JIT compiler, Let's understand how Google's v8 engine does this
 
-![JS Engine composition](./media/jse-4.png)
+![JS Engine composition](./media/jse-3.gif)
 
 Initially
 
@@ -200,7 +200,7 @@ So far we learned that JS Engine does a lot of work for us, but the more importa
 
 # Understanding Heap
 
-![Heap](./media/jre-1.png)
+![Heap](./media/jre-1.gif)
 
 A place to store and write information (variables, objects, etc) --> Memory Heap --> used by JS engine for memory allocation
 
@@ -247,7 +247,7 @@ setInterval(()=>{
 ```
 
 # Understanding Call Stack
-![call stack](./media/jre-3.png)
+![call stack](./media/jre-2.gif)
 
 A place to store and keep track of what is happening line by line on our code --> Call Stack - used by JS engine to keep track of where your code is, in execution
 ```javascript
@@ -372,7 +372,7 @@ It's not only the JS engine executing our code but the JS Runtime (NodeJS implem
 
 # Understanding JS Runtime
 
-![JS runtime](./media/jre-17.png)
+![JS runtime](./media/jre-17.gif)
 
 To overcome the single-threaded nature of JS, JS Runtime came into the picture. 
 
@@ -451,4 +451,4 @@ JS Engine    > Music Composer
 
 JS Runtime > Music Orchestra 
 
-![JS vs runtime vs engine](./media/jre-19.png) 
+![JS vs runtime vs engine](./media/jre-19.gif) 
