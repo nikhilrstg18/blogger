@@ -1,0 +1,481 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.2.0"/><meta name="theme-color" content="#E100FF"/><meta data-react-helmet="true" name="description" content="Programming languages all have built-in data structures, but these often differ from one language to another. This article attempts to list the built-in data structures available in JavaScript and what properties they have. These can be used to build other data structures. Wherever possible, comparisons with other languages are drawn"/><meta data-react-helmet="true" property="og:site_name" content="Javascript - 104 | Types &amp; Cast-Coercion - Blog by Nikhil Rustagi"/><meta data-react-helmet="true" property="og:image" content="https://nihkilrstg18.github.io/media/js104.gif"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="Javascript - 104 | Types &amp; Cast-Coercion - Blog by Nikhil Rustagi"/><meta data-react-helmet="true" name="twitter:description" content="Programming languages all have built-in data structures, but these often differ from one language to another. This article attempts to list the built-in data structures available in JavaScript and what properties they have. These can be used to build other data structures. Wherever possible, comparisons with other languages are drawn"/><meta data-react-helmet="true" name="twitter:image" content="https://nihkilrstg18.github.io/media/js104.gif"/><style data-href="/blogger/styles.154e51ddd3e3f10de025.css" data-identity="gatsby-global-css">html{font-size:100}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#212121;font-size:16px;line-height:1.625;margin:0 0 0 calc(100vw - 100%);text-rendering:optimizelegibility}body,h1,h2,h3,h4,h5,h6{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}h1,h2,h3,h4,h5,h6{font-weight:600}h1{font-size:40px;line-height:52px;margin-bottom:26px;margin-top:104px}h2{font-size:27px;line-height:39px}h2,h3{margin-bottom:13px;margin-top:52px}h3{font-size:22px;line-height:26px}h4{font-size:19.2px;margin-top:39px}h4,h5{line-height:26px;margin-bottom:13px}h5,h6{font-size:16px;margin-top:65px}h6{line-height:26px;margin-bottom:13px}img{max-width:100%}hr,img{border:0;display:block}hr{background-image:linear-gradient(180deg,transparent 1px,transparent 11px,#212121 0,#212121 15px,transparent 0,transparent 26px);background-size:100% 26px;color:#212121;height:26px;margin:52px auto;width:100px}a{color:#7f00ff;text-decoration:none}a:active,a:focus,a:hover{color:#e100ff}b,strong{font-weight:600}ul{list-style:square;margin-bottom:26px}ul li{margin-bottom:10px;padding:0 5px}p{line-height:26px;margin-bottom:26px;text-align:justify}blockquote{font-style:italic;padding:0;text-align:center}figure{display:block;height:auto;width:100%}th{text-align:left}figcaption,th td:nth-last-child(2n){text-align:center}figcaption{color:#212121;font-size:14px;font-style:italic;line-height:19.5px;margin-bottom:0;margin-top:6.5px}@media screen and (min-width:685px){figure.float-left,figure.float-right{max-width:310px;padding:0 26px}.float-right{float:right}.float-left{float:left}}code[class*=language-],pre[class*=language-]{word-wrap:normal;color:#657b83;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#073642}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1}.token.punctuation{color:#586e75}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198}.token.entity{background:#eee8d5;color:#657b83;cursor:help}.token.atrule,.token.attr-value,.token.keyword{color:#859900}.token.class-name,.token.function{color:#b58900}.token.important,.token.regex,.token.variable{color:#cb4b16}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.Feed-module--feed--a6204 .Feed-module--item--c7a63{margin-bottom:32.5px}.Feed-module--feed--a6204 .Feed-module--item--c7a63:last-child{margin-bottom:13px}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--title--f252f{font-size:27px;line-height:39px;margin-bottom:13px;margin-top:0}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--title--f252f .Feed-module--link--6123b{color:#212121}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--title--f252f .Feed-module--link--6123b:focus,.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--title--f252f .Feed-module--link--6123b:hover{border-bottom:1px solid #212121;color:#212121}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--description--57348{font-size:16px;line-height:26px;margin-bottom:19.5px}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--meta--250c2 .Feed-module--time--72864{color:#212121;font-size:14px;font-weight:600;text-transform:uppercase}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--meta--250c2 .Feed-module--divider--81a18{margin:0 13px}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--meta--250c2 .Feed-module--category--59f58 .Feed-module--link--6123b{color:#e100ff;font-size:14px;font-weight:600;text-transform:uppercase}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--meta--250c2 .Feed-module--category--59f58 .Feed-module--link--6123b:focus,.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--meta--250c2 .Feed-module--category--59f58 .Feed-module--link--6123b:hover{color:#7f00ff}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--more--51a4e{color:#7f00ff;font-size:16px}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--more--51a4e:focus,.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--more--51a4e:hover{border-bottom:1px solid #7f00ff;color:#7f00ff}.Layout-module--layout--2c933{margin-left:auto;margin-right:auto;max-width:1070px}.Layout-module--layout--2c933:before{content:"";display:table}.Layout-module--layout--2c933:after{clear:both;content:"";display:table}.Page-module--page--24e03{margin-bottom:52px}.Page-module--page--24e03 .Page-module--inner--4b31d{padding:26px 19.5px 0}.Page-module--page--24e03 .Page-module--title--90338{font-size:40px;font-weight:600;line-height:52px;margin-bottom:37.7px;margin-top:0}.Page-module--page--24e03 .Page-module--body--561c4{font-size:16px;line-height:26px;margin:0 0 26px}@media screen and (min-width:685px){.Page-module--page--24e03{width:calc(58.275% - 12.5px)}.Page-module--page--24e03:nth-child(1n){clear:none;float:left;margin-right:30px}.Page-module--page--24e03:last-child{margin-right:0}.Page-module--page--24e03:nth-child(12n){float:right;margin-right:0}.Page-module--page--24e03:nth-child(12n+1){clear:both}.Page-module--page--24e03 .Page-module--inner--4b31d{padding:32.5px 19.5px 0}}@media screen and (min-width:960px){.Page-module--page--24e03{width:calc(66.6% - 10px)}.Page-module--page--24e03:nth-child(1n){clear:none;float:left;margin-right:30px}.Page-module--page--24e03:last-child{margin-right:0}.Page-module--page--24e03:nth-child(3n){float:right;margin-right:0}.Page-module--page--24e03:nth-child(3n+1){clear:both}.Page-module--page--24e03 .Page-module--inner--4b31d{padding:39px 26px 0}}.Pagination-module--pagination--d61cb{display:flex;margin-top:52px}.Pagination-module--pagination--d61cb .Pagination-module--previous--4a76b{text-align:left;width:50%}.Pagination-module--pagination--d61cb .Pagination-module--previous--4a76b .Pagination-module--previousLink--5590d{color:#e100ff;font-size:26px;font-weight:700}.Pagination-module--pagination--d61cb .Pagination-module--previous--4a76b .Pagination-module--previousLink--5590d:focus,.Pagination-module--pagination--d61cb .Pagination-module--previous--4a76b .Pagination-module--previousLink--5590d:hover{color:#7f00ff}.Pagination-module--pagination--d61cb .Pagination-module--previous--4a76b .Pagination-module--previousLink--5590d.Pagination-module--disable--7e105{color:#9b9b9b;pointer-events:none}.Pagination-module--pagination--d61cb .Pagination-module--next--1cab8{text-align:right;width:50%}.Pagination-module--pagination--d61cb .Pagination-module--next--1cab8 .Pagination-module--nextLink--532ff{color:#e100ff;font-size:26px;font-weight:700}.Pagination-module--pagination--d61cb .Pagination-module--next--1cab8 .Pagination-module--nextLink--532ff:focus,.Pagination-module--pagination--d61cb .Pagination-module--next--1cab8 .Pagination-module--nextLink--532ff:hover{color:#7f00ff}.Pagination-module--pagination--d61cb .Pagination-module--next--1cab8 .Pagination-module--nextLink--532ff.Pagination-module--disable--7e105{color:#9b9b9b;pointer-events:none}.Author-module--author--cbd31 .Author-module--photo--9787b{background-clip:padding-box;border-radius:50%;display:inline-block;height:75px;margin-bottom:0;width:75px}.Author-module--author--cbd31 .Author-module--title--cf7e5{font-size:18px;font-weight:600;line-height:29.25px;margin:13px 0}.Author-module--author--cbd31 .Author-module--title--cf7e5 .Author-module--link--09c17,.Author-module--author--cbd31 .Author-module--title--cf7e5 .Author-module--link--09c17:focus,.Author-module--author--cbd31 .Author-module--title--cf7e5 .Author-module--link--09c17:hover{color:#212121}.Author-module--author--cbd31 .Author-module--subtitle--86ec5{color:#878787;line-height:26px;margin-bottom:26px}.Icon-module--icon--1d7da{fill:currentcolor;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;speak:none;stroke:currentcolor;stroke-width:0;display:inline-block;font-style:normal;font-variant:normal;font-weight:400;height:1em;line-height:1em;text-align:center;text-transform:none;width:1em}.Contacts-module--contacts--09178{margin-bottom:26px}.Contacts-module--contacts--09178 .Contacts-module--list--9670b{display:flex;flex-flow:row wrap;flex-grow:0;flex-shrink:0;list-style:none;margin:13px 0;max-width:150px;padding:0}.Contacts-module--contacts--09178 .Contacts-module--list--9670b .Contacts-module--item--f9cb0{align-content:center;align-items:center;border:1px solid #ebebeb;border-radius:50%;display:flex;height:35px;justify-content:center;line-height:35px;margin:6.5px;padding:0;text-align:center;width:35px}.Contacts-module--contacts--09178 .Contacts-module--list--9670b .Contacts-module--item--f9cb0:nth-child(3n+1){margin-left:0}.Contacts-module--contacts--09178 .Contacts-module--list--9670b .Contacts-module--item--f9cb0 .Contacts-module--link--de1e0{border:0;color:#212121;display:flex}.Contacts-module--contacts--09178 .Contacts-module--list--9670b .Contacts-module--item--f9cb0 .Contacts-module--link--de1e0:focus,.Contacts-module--contacts--09178 .Contacts-module--list--9670b .Contacts-module--item--f9cb0 .Contacts-module--link--de1e0:hover{color:#7f00ff}.Copyright-module--copyright--2c602{color:#999;font-size:14px}.Menu-module--menu--113a9{margin-bottom:26px}.Menu-module--menu--113a9 .Menu-module--list--e1ae3{list-style:none;margin:0;padding:0}.Menu-module--menu--113a9 .Menu-module--list--e1ae3 .Menu-module--item--8b679{margin:13px 0;padding:0}.Menu-module--menu--113a9 .Menu-module--list--e1ae3 .Menu-module--item--8b679 .Menu-module--link--a6f02{border:0;color:#212121;font-size:16px;font-weight:400}.Menu-module--menu--113a9 .Menu-module--list--e1ae3 .Menu-module--item--8b679 .Menu-module--link--a6f02:focus,.Menu-module--menu--113a9 .Menu-module--list--e1ae3 .Menu-module--item--8b679 .Menu-module--link--a6f02:hover{border-bottom:1px solid #7f00ff;color:#7f00ff}.Menu-module--menu--113a9 .Menu-module--list--e1ae3 .Menu-module--item--8b679 .Menu-module--link--a6f02.Menu-module--active--6cb74{border-bottom:1px solid #212121;color:#212121}.Sidebar-module--sidebar--1bfa1{width:100%}.Sidebar-module--sidebar--1bfa1 .Sidebar-module--inner--344d0{padding:26px 19.5px 0;position:relative}@media screen and (min-width:685px){.Sidebar-module--sidebar--1bfa1{width:calc(41.625% - 17.5px)}.Sidebar-module--sidebar--1bfa1:nth-child(1n){clear:none;float:left;margin-right:30px}.Sidebar-module--sidebar--1bfa1:last-child{margin-right:0}.Sidebar-module--sidebar--1bfa1:nth-child(12n){float:right;margin-right:0}.Sidebar-module--sidebar--1bfa1:nth-child(12n+1){clear:both}.Sidebar-module--sidebar--1bfa1 .Sidebar-module--inner--344d0{padding:32.5px 19.5px 0}.Sidebar-module--sidebar--1bfa1 .Sidebar-module--inner--344d0:after{background:#e6e6e6;background:linear-gradient(180deg,#e6e6e6 0,#e6e6e6 48%,#fff);bottom:0;content:"";height:540px;position:absolute;right:-10px;top:30px;width:1px}}@media screen and (min-width:960px){.Sidebar-module--sidebar--1bfa1{width:calc(33.3% - 20px)}.Sidebar-module--sidebar--1bfa1:nth-child(1n){clear:none;float:left;margin-right:30px}.Sidebar-module--sidebar--1bfa1:last-child{margin-right:0}.Sidebar-module--sidebar--1bfa1:nth-child(3n){float:right;margin-right:0}.Sidebar-module--sidebar--1bfa1:nth-child(3n+1){clear:both}.Sidebar-module--sidebar--1bfa1 .Sidebar-module--inner--344d0{padding:39px}}.Author-module--author--1c58d{border-top:1px solid #e6e6e6;line-height:26px;margin-bottom:52px;margin-top:26px;max-width:640px;padding-top:26px}.Author-module--author--1c58d .Author-module--bio--08950 .Author-module--twitter--90647{display:block;text-decoration:underline}@media screen and (min-width:685px){.Author-module--author--1c58d{margin-left:auto;margin-right:auto}}.Content-module--content--80d58{margin:0 auto;max-width:945px;padding:0 13px}.Content-module--content--80d58 .Content-module--title--09504{font-size:32px;font-weight:600;line-height:42.9px;margin:26px auto 0;max-width:640px;text-align:center}.Content-module--content--80d58 .Content-module--body--726c2 figure{margin-bottom:26px}.Content-module--content--80d58 .Content-module--body--726c2 figure blockquote{font-style:italic;margin-top:0;padding:26px 0;text-align:center}.Content-module--content--80d58 .Content-module--body--726c2 figure blockquote p{font-size:26.9072px;line-height:39px;margin-bottom:26px;margin-top:0;max-width:640px}.Content-module--content--80d58 .Content-module--body--726c2 a{text-decoration:underline}.Content-module--content--80d58 .Content-module--body--726c2 *{margin-left:auto;margin-right:auto;max-width:640px}.Content-module--content--80d58 .Content-module--body--726c2 h2>a{visibility:hidden}.Content-module--content--80d58 .Content-module--body--726c2 img{max-width:100%}@media screen and (min-width:960px){.Content-module--content--80d58{padding:0}.Content-module--content--80d58 .Content-module--title--09504{font-size:48px;line-height:58.5px;margin-bottom:39px;margin-top:58.5px}.Content-module--content--80d58 .Content-module--body--726c2,.Content-module--content--80d58 .Content-module--body--726c2 p{font-size:18px;line-height:29.25px;margin-bottom:29.25px}.Content-module--content--80d58 .Content-module--body--726c2 h2>a{padding-right:26px;visibility:unset}}.Meta-module--meta--dae0a .Meta-module--date--4d30d{font-style:italic}.Tags-module--tags--18589{margin-bottom:13px}.Tags-module--tags--18589 .Tags-module--list--82ae6{list-style:none;padding:0}.Tags-module--tags--18589 .Tags-module--list--82ae6 .Tags-module--item--52015{display:inline-block;margin:13px 3.25px}@media screen and (min-width:685px){.Tags-module--tags--18589 .Tags-module--list--82ae6 .Tags-module--item--52015:first-child{margin-left:0;padding-left:0}}.Tags-module--tags--18589 .Tags-module--list--82ae6 .Tags-module--item--52015 .Tags-module--link--e4ee3{border:1px solid #e6e6e6;border-radius:20px;color:#212121;display:inline-block;height:35px;line-height:35px;padding:0 19.5px;text-decoration:none}.Tags-module--tags--18589 .Tags-module--list--82ae6 .Tags-module--item--52015 .Tags-module--link--e4ee3:focus,.Tags-module--tags--18589 .Tags-module--list--82ae6 .Tags-module--item--52015 .Tags-module--link--e4ee3:hover{color:#7f00ff}.Post-module--post--3a994 .Post-module--content--3c6e5{margin:0 auto}.Post-module--post--3a994 .Post-module--comments--d3b99,.Post-module--post--3a994 .Post-module--footer--f8705{margin:0 auto;max-width:640px;padding:0 13px}.Post-module--post--3a994 .Post-module--button--51f8f{border:1px solid #e6e6e6;border-radius:20px;color:#212121;display:block;font-size:16px;font-weight:400;height:35px;line-height:35px;margin-left:auto;margin-right:auto;margin-top:26px;max-width:90px;padding:0 26px;text-align:center}.Post-module--post--3a994 .Post-module--button--51f8f:focus,.Post-module--post--3a994 .Post-module--button--51f8f:hover{color:#7f00ff}@media screen and (min-width:960px){.Post-module--post--3a994 .Post-module--comments--d3b99,.Post-module--post--3a994 .Post-module--footer--f8705{padding:0}.Post-module--post--3a994 .Post-module--button--51f8f{left:30px;margin:0;max-width:none;position:fixed;top:30px}}</style><link rel="alternate" type="application/rss+xml" title="Blog by Nikhil Rustagi" href="/blogger/rss.xml"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><script async="" src="https://www.googletagmanager.com/gtag/js?id="></script><script>
+      
+      
+      if(true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '', {"send_page_view":false});
+      }
+      </script><link rel="sitemap" type="application/xml" href="/blogger/sitemap-index.xml"/><link rel="icon" href="/blogger/favicon-32x32.png?v=6a7f9eb92a6fb0ab7969d871ed676489" type="image/png"/><link rel="manifest" href="/blogger/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/blogger/icons/icon-48x48.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="72x72" href="/blogger/icons/icon-72x72.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="96x96" href="/blogger/icons/icon-96x96.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="144x144" href="/blogger/icons/icon-144x144.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="192x192" href="/blogger/icons/icon-192x192.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="256x256" href="/blogger/icons/icon-256x256.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="384x384" href="/blogger/icons/icon-384x384.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="512x512" href="/blogger/icons/icon-512x512.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true">Javascript - 104 | Types &amp; Cast-Coercion - Blog by Nikhil Rustagi</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Layout-module--layout--2c933"><div class="Post-module--post--3a994"><a class="Post-module--button--51f8f" href="/blogger/">All Blogs</a><div class="Post-module--content--3c6e5"><div class="Content-module--content--80d58"><h1 class="Content-module--title--09504">Javascript - 104 | Types &amp; Cast-Coercion</h1><div class="Content-module--body--726c2"><p>Programming languages all have built-in data structures, but these often differ from one language to another. This article attempts to list the built-in data structures available in JavaScript and what properties they have. These can be used to build other data structures. Wherever possible, comparisons with other languages are drawn.</p>
+<p><img src="/55c7be6a57b3a4b4f0467024b248a8de/js104.gif" alt="Javascript code"></p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>JS Types</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-Primitives</strong></td>
+<td><a href="#primitive">1 boolean</a><br /><a href="#null">2 null</a><br /><a href="#undefined">3 undefined</a><br /><a href="#number">4 number</a> &#x26; <a href="#bigint">bigInt</a><br /><a href="#string">5 string</a><br /><a href="#symbol">6 Symbol</a><br /></td>
+</tr>
+<tr>
+<td><strong>-Objects</strong></td>
+<td><a href="#objects">Object</a></td>
+</tr>
+<tr>
+<td><strong>-Casting and Coercion</strong></td>
+<td><a href="#casting-explicit-conversion">1. Casting - (Explicit Conversion)</a><br /><a href="#coercion-implicit-conversion">2. Coercion - (Implicit Conversion)</a><br /><a href="#coercion-to-number">2.1 Coercion to number</a><br /><a href="#coercion-to-string">2.2 Coercion to string</a><br /><a href="#coercion-to-boolean">2.3 Coercion to boolean</a><br /></td>
+</tr>
+</tbody>
+</table>
+<h1 id="js-types" style="position:relative;"><a href="#js-types" aria-label="js types permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>JS Types</h1>
+<p>The set of types in the JavaScript language consists of <strong>primitive values</strong> and <strong>objects</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>JS Type</th>
+<th>typeof return value</th>
+<th>Object wrapper</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Null</td>
+<td>“object”</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Undefined</td>
+<td>“undefined”</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>“boolean”</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>“number”</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>BigInt</td>
+<td>“bigint”</td>
+<td>BigInt</td>
+</tr>
+<tr>
+<td>String</td>
+<td>“string”</td>
+<td>String</td>
+</tr>
+<tr>
+<td>Symbol</td>
+<td>“symbol”</td>
+<td>Symbol</td>
+</tr>
+</tbody>
+</table>
+<h2 id="primitive" style="position:relative;"><a href="#primitive" aria-label="primitive permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Primitive</h2>
+<blockquote>
+<p>(immutable datum represented directly at the lowest level of the language)</p>
+</blockquote>
+<h3 id="boolean" style="position:relative;"><a href="#boolean" aria-label="boolean permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code class="language-text">Boolean</code></h3>
+<ul>
+<li>
+<p>type represents a logical entity and can have two values: true and false</p>
+<p><a href="#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">👉 Read more about <code class="language-text">Boolean</code> and its usage @ MDN</a></p>
+</li>
+</ul>
+<h3 id="null" style="position:relative;"><a href="#null" aria-label="null permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code class="language-text">Null</code></h3>
+<ul>
+<li>
+<p>type has exactly one value: null</p>
+<p><a href="#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null">👉 Read more about <code class="language-text">null</code> and its usage @ MDN</a></p>
+</li>
+</ul>
+<h3 id="undefined" style="position:relative;"><a href="#undefined" aria-label="undefined permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code class="language-text">Undefined</code></h3>
+<ul>
+<li>
+<p>A variable that has not been assigned a value has the value undefined</p>
+<p><a href="#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">👉 Read more about <code class="language-text">undefined</code> and its usage @ MDN</a></p>
+</li>
+</ul>
+<h3 id="number" style="position:relative;"><a href="#number" aria-label="number permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code class="language-text">Number</code></h3>
+<ul>
+<li>
+<p>type is a double-precision 64-bit binary format IEEE 754 value.</p>
+</li>
+<li>
+<p>It is capable of storing positive floating-point numbers between</p>
+<p>2^-1074 (<code class="language-text">Number.MIN_VALUE</code>) and 2^1024 (<code class="language-text">Number.MAX_VALUE</code>)</p>
+<p>as well as negative floating-point numbers between</p>
+<p>between -(2^-1074) and -(2^1024)</p>
+</li>
+<li>
+<p>But it can only safely store integers in the range</p>
+<p>(2^53 − 1) (<code class="language-text">Number.MIN_SAFE_INTEGER</code>) to 2^53 − 1 (<code class="language-text">Number.MAX_SAFE_INTEGER</code>).</p>
+</li>
+<li>
+<p>You can check if a number is within the range of safe integers using <code class="language-text">Number.isSafeInteger()</code>. Outside the range from <code class="language-text">Number.MIN_SAFE_INTEGER</code> to <code class="language-text">Number.MAX_SAFE_INTEGER</code>, JavaScript can no longer safely represent integers; they will instead be represented by a double-precision floating point approximation.</p>
+<p>Values outside the range ±(2^-1074 to 2^1024) are automatically converted:</p>
+<ul>
+<li>Positive values greater than Number.MAX_VALUE are converted to <code class="language-text">+Infinity</code>.</li>
+<li>Positive values smaller than Number.MIN_VALUE are converted to +0.</li>
+<li>Negative values smaller than -Number.MAX_VALUE are converted to <code class="language-text">-Infinity</code>.</li>
+<li>Negative values greater than -Number.MIN_VALUE are converted to -0.</li>
+</ul>
+</li>
+<li>
+<p>+Infinity and -Infinity behave similarly to mathematical infinity, but with some slight differences; see <code class="language-text">Number.POSITIVE_INFINITY</code> and <code class="language-text">Number.NEGATIVE_INFINITY</code> for details.</p>
+</li>
+<li>
+<p>The Number type has only one integer with multiple representations: 0 is represented as both -0 and +0 (where 0 is an alias for +0).</p>
+<p>In practice, there is almost no difference between the different representations; for example, +0 === -0 is true. However, you are able to notice this when you divide by zero:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">42</span> <span class="token operator">/</span> <span class="token operator">+</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Infinity</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">42</span> <span class="token operator">/</span> <span class="token operator">-</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// -Infinity</span></code></pre></div>
+<p>Although a number often represents only its value, JavaScript provides binary (bitwise) operators.</p>
+<p><a href="#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">👉 Read more about <code class="language-text">Number</code> and its usage @ MDN</a></p>
+</li>
+</ul>
+<h3 id="bigint" style="position:relative;"><a href="#bigint" aria-label="bigint permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code class="language-text">BigInt</code></h3>
+<ul>
+<li>
+<p>type is a numeric primitive in JavaScript that can represent integers with arbitrary precision.</p>
+<p>With BigInts, you can safely store and operate on large integers even beyond the safe integer limit for Numbers.</p>
+</li>
+<li>
+<p>A BigInt is created by appending n to the end of an integer or by calling the constructor.</p>
+</li>
+<li>
+<p>You can obtain the largest safe value that can be incremented with Numbers by using the constant Number.MAX_SAFE_INTEGER. With the introduction of BigInts, you can operate with numbers beyond the Number.MAX_SAFE_INTEGER.</p>
+</li>
+<li>
+<p>This example demonstrates, where incrementing the Number.MAX_SAFE_INTEGER returns the expected result:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// BigInt</span>
+<span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token function">BigInt</span><span class="token punctuation">(</span>Number<span class="token punctuation">.</span><span class="token constant">MAX_SAFE_INTEGER</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 9007199254740991n</span>
+x <span class="token operator">+</span> <span class="token number">1n</span> <span class="token operator">===</span> x <span class="token operator">+</span> <span class="token number">2n</span><span class="token punctuation">;</span> <span class="token comment">// false because 9007199254740992n and 9007199254740993n are unequal</span>
+
+<span class="token comment">// Number</span>
+Number<span class="token punctuation">.</span><span class="token constant">MAX_SAFE_INTEGER</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">===</span> Number<span class="token punctuation">.</span><span class="token constant">MAX_SAFE_INTEGER</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token comment">// true because both are 9007199254740992</span></code></pre></div>
+</li>
+<li>
+<p>You can use the operators +, *, -, **, and % with BigInts—just like with Numbers. A BigInt is not strictly equal to a Number, but it is loosely so.</p>
+<p>A BigInt behaves like a Number in cases where it is converted to boolean: if, ||, &#x26;&#x26;, Boolean, !.</p>
+<p>BigInts cannot be operated on interchangeably with Numbers. Instead a TypeError will be thrown.</p>
+<blockquote>
+<p><strong>NaN</strong> (“Not a Number”) is typically encountered when the result of an arithmetic operation cannot be expressed as a number. It is also the only value in JavaScript that is not equal to itself</p>
+</blockquote>
+<p><a href="#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">👉 Read more about <code class="language-text">BigInt</code> and its usage @ MDN</a></p>
+</li>
+</ul>
+<h3 id="string" style="position:relative;"><a href="#string" aria-label="string permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code class="language-text">String</code></h3>
+<ul>
+<li>
+<p>type is used to represent textual data. It is a set of “elements” of 16-bit unsigned integer values. Each element in the String occupies a position in the String. The first element is at index 0, the next at index 1, and so on. The length of a String is the number of elements in it.</p>
+</li>
+<li>
+<p>JavaScript <code class="language-text">strings are immutable</code>. This means that once a string is created, it is not possible to modify it.</p>
+</li>
+<li>
+<p>However, it is still possible to create another string based on an operation on the original string. For example:</p>
+<p>A substring of the original by picking individual letters or using String.substr().</p>
+<p>A concatenation of two strings using the concatenation operator (+) or String.concat().</p>
+<p><a href="#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">👉 Read more about <code class="language-text">String</code> and its usage @ MDN</a></p>
+</li>
+</ul>
+<h3 id="symbol" style="position:relative;"><a href="#symbol" aria-label="symbol permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code class="language-text">Symbol</code></h3>
+<ul>
+<li>A Symbol is a unique and immutable primitive value and may be used as the key of an Object property (see below). In some programming languages, Symbols are called “atoms”.</li>
+</ul>
+<p>Objects (collections of properties)</p>
+<p><a href="#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">👉 Read more about <code class="language-text">Symbol</code> and its usage @ MDN</a></p>
+<h2 id="objects" style="position:relative;"><a href="#objects" aria-label="objects permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Objects</h2>
+<p>An object is a value in memory which is possibly referenced by an identifier.</p>
+<h3 id="properties" style="position:relative;"><a href="#properties" aria-label="properties permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Properties</h3>
+<p>In JavaScript, objects can be seen as a collection of properties. With the object literal syntax, a limited set of properties are initialized; then properties can be added and removed. Property values can be values of any type, including other objects, which enables building complex data structures. Properties are identified using key values. A key value is either a String value or a Symbol value.</p>
+<p>There are two types of object properties: The data property and the accessor property. Each property has corresponding attributes. Each attribute is accessed internally by the JavaScript engine, but you can set them through Object.defineProperty(), or read them through Object.getOwnPropertyDescriptor(). You can read more about the various nuances on the Object.defineProperty() page.</p>
+<h3 id="data-property" style="position:relative;"><a href="#data-property" aria-label="data property permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data property</h3>
+<p>Data properties associate a key with a value. It can be described by the following attributes:</p>
+<ul>
+<li>
+<p><code class="language-text">value</code> : The value retrieved by a get access of the property. Can be any JavaScript value.</p>
+</li>
+<li>
+<p><code class="language-text">writable</code> : A boolean value indicating if the property can be changed with an assignment.</p>
+</li>
+<li>
+<p><code class="language-text">enumerable</code> : A boolean value indicating if the property can be enumerated by a for…in loop. See also Enumerability and ownership of properties for how enumerability interacts with other functions and syntaxes.</p>
+</li>
+<li>
+<p><code class="language-text">configurable</code> : A boolean value indicating if the property can be deleted, can be changed to an accessor property, and can have its attributes changed.</p>
+</li>
+</ul>
+<h3 id="accessor-property" style="position:relative;"><a href="#accessor-property" aria-label="accessor property permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Accessor property</h3>
+<p>Associates a key with one of two accessor functions (get and set) to retrieve or store a value.</p>
+<blockquote>
+<p>It’s important to recognize it’s accessor property — not accessor method. We can give a JavaScript object class-like accessors by using a function as a value — but that doesn’t make the object a class.</p>
+</blockquote>
+<p>An accessor property has the following attributes:</p>
+<ul>
+<li>
+<p><code class="language-text">get</code> : A function called with an empty argument list to retrieve the property value whenever a get access to the value is performed. See also getters. May be undefined.</p>
+</li>
+<li>
+<p><code class="language-text">set</code> : A function called with an argument that contains the assigned value. Executed whenever a specified property is attempted to be changed. See also setters. May be undefined.</p>
+</li>
+<li>
+<p><code class="language-text">enumerable</code> : A boolean value indicating if the property can be enumerated by a for…in loop. See also Enumerability and ownership of properties for how enumerability interacts with other functions and syntaxes.</p>
+</li>
+<li>
+<p><code class="language-text">configurable</code> : A boolean value indicating if the property can be deleted, can be changed to a data property, and can have its attributes changed.</p>
+</li>
+</ul>
+<p>“Normal” objects, and functions
+A JavaScript object is a mapping between keys and values. Keys are strings (or Symbols), and values can be anything. This makes objects a natural fit for hashmaps.</p>
+<p><a href="#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">👉 Read more about <code class="language-text">Object</code> and its usage @ MDN</a></p>
+<h1 id="types-casting--coercion" style="position:relative;"><a href="#types-casting--coercion" aria-label="types casting  coercion permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Types Casting &#x26; Coercion</h1>
+<p>In JS,</p>
+<ul>
+<li>The process of type conversion is called “type coercion”, when it is done implicitly. [ JS is loosely typed language ]</li>
+<li>When it is done explicitly, it is called “type casting”</li>
+</ul>
+<p>Generally, when developer talk about coercion , they usually refer to both types, implicit and explicit.The main difference between these two is that one is usually done on purpose while the other automatically, by the language.</p>
+<h2 id="casting-explicit-conversion" style="position:relative;"><a href="#casting-explicit-conversion" aria-label="casting explicit conversion permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Casting (Explicit Conversion)</h2>
+<p>Explicit coercion happens when JavaScript developers decide to convert value from another using specific function.</p>
+<p>For example, you can use Number() function to convert some type to a number, or String() to a string</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Using explicit coercion to convert types to a number</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'55'</span><span class="token punctuation">)</span> <span class="token comment">// 55</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'dwarf'</span><span class="token punctuation">)</span> <span class="token comment">// Nan</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token comment">// 0</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// NaN</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token comment">// 0</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token comment">// NaN</span>
+
+<span class="token comment">// Use explicit coercion to convert types to a string</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token number">99</span><span class="token punctuation">)</span> <span class="token comment">// '99'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token comment">// 'true'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token comment">// 'false'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// ''</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'one'</span><span class="token punctuation">,</span> <span class="token string">'two'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// 'one,two'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// '[object Object]'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token number">Infinity</span><span class="token punctuation">)</span> <span class="token comment">// 'Infinity'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token comment">// 'null'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token comment">// 'undefined'</span></code></pre></div>
+<h2 id="coercion-implicit-conversion" style="position:relative;"><a href="#coercion-implicit-conversion" aria-label="coercion implicit conversion permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Coercion (Implicit Conversion)</h2>
+<p>Type coercion in JavaScript is one of the topics that can be tricky. It is also one of the topics every JavaScript developer has to learn and understand.</p>
+<p>One advantage, or disadvantage, of weakly typed languages is that it allows for implicit type coercion to happen. This usually happens in two situations. The first one is when you use some operator along with two or more different values. Here, JavaScript will take those values and convert them as needed to make that operation happen</p>
+<p>For example, let’s say you try to add a string to a number. In this case, JavaScript will take the number, convert it to a string. After that, it will concatenate that converted number, now string, with the string you wanted to add.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Implicit conversion of a number to string</span>
+<span class="token number">13</span> <span class="token operator">+</span> <span class="token string">'14'</span> <span class="token comment">// '1314'</span>
+<span class="token number">123</span> <span class="token operator">+</span> <span class="token string">''</span> <span class="token comment">// '123</span>
+<span class="token number">7</span> <span class="token operator">+</span> <span class="token string">' roses'</span> <span class="token comment">// '7 roses'</span></code></pre></div>
+<p>Another example can be when you try to compare a number with another number that is defined as a string. In this case, JavaScript will first convert that number defined as a string to a number. After that, it will convert the real number with the converted. The same happens if you try to multiply those numbers.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Implicit conversion of a string to number</span>
+<span class="token number">4</span> <span class="token operator">&lt;</span> <span class="token string">'5'</span> <span class="token comment">// true</span>
+<span class="token number">6</span> <span class="token operator">></span> <span class="token string">'15'</span> <span class="token comment">// false</span>
+<span class="token number">95</span> <span class="token operator">*</span> <span class="token string">'15'</span> <span class="token comment">// 1425</span></code></pre></div>
+<p>The second situation when implicit type coercion happens is when you use if…else statement or ternary operator. It doesn’t matter what you use as the condition. The result will always be a boolean, either true or false. This is also why it is important to remember what are falsy and truthy values in JavaScript.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Implicit conversion and truthy and falsy values</span>
+
+<span class="token comment">// Some truthy values</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token boolean">true</span> <span class="token comment">// true</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">'test'</span><span class="token punctuation">)</span> <span class="token boolean">true</span> <span class="token comment">// true</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token boolean">true</span> <span class="token comment">// true</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token boolean">true</span> <span class="token comment">// true</span>
+
+
+<span class="token comment">// Some falsy values</span>
+<span class="token string">''</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">// false</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token string">''</span><span class="token punctuation">)</span> <span class="token boolean">true</span> <span class="token comment">// true</span>
+<span class="token number">0</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">// false</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token boolean">true</span> <span class="token comment">// true</span>
+<span class="token keyword">null</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">// false</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token boolean">true</span> <span class="token comment">// true</span>
+<span class="token number">NaN</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">// false</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token number">NaN</span><span class="token punctuation">)</span> <span class="token comment">// true</span></code></pre></div>
+<p>There are 3 types of coercion</p>
+<h3 id="coercion-to-number" style="position:relative;"><a href="#coercion-to-number" aria-label="coercion to number permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Coercion to number</h3>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Implicit coercion to number</span>
+<span class="token number">7</span> <span class="token operator">></span> <span class="token string">'10'</span> <span class="token comment">// false => becomes: 7 > 10</span>
+<span class="token operator">+</span><span class="token string">'88'</span> <span class="token comment">// becomes 88</span>
+<span class="token number">65</span> <span class="token operator">!=</span> <span class="token string">'56'</span> <span class="token comment">// true, => becomes: 65 != 56</span>
+<span class="token number">15</span> <span class="token operator">/</span> <span class="token keyword">null</span> <span class="token comment">// infinity</span>
+<span class="token boolean">false</span> <span class="token operator">|</span> <span class="token number">0</span> <span class="token comment">// 0</span>
+
+
+<span class="token comment">// Explicit coercion to number</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'678'</span><span class="token punctuation">)</span> <span class="token comment">// 678</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'13m'</span><span class="token punctuation">)</span> <span class="token comment">// NaN</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">' 51 '</span><span class="token punctuation">)</span> <span class="token comment">// 51</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'-65.9'</span><span class="token punctuation">)</span> <span class="token comment">// -65.9</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">)</span> <span class="token comment">// 0</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'\n13'</span><span class="token punctuation">)</span> <span class="token comment">// 13</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'\t'</span><span class="token punctuation">)</span> <span class="token comment">// 0</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'\t695'</span><span class="token punctuation">)</span> <span class="token comment">// 695</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// 0</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token comment">// 0</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token comment">// NaN</span></code></pre></div>
+<p>Implicit, or type coercion, is more tricky. There are multiple ways in which it can be triggered.</p>
+<p>The first one are comparison operators, the >, &#x3C;, &#x3C;= and >=. When you use any of these operators JavaScript will automatically coerce the values you used with one of these operators to number. Implicit coercion to number will also happen when you use bitwise operators, the |, &#x26;, ^ and ~. It will also happen if you use arithmetic operators, the -, +, *, / and %.</p>
+<p>One exception here is the binary + operator. This operator will not trigger coercion to number if any of the values is type of a string. What will happen instead is coercion to a string. Lastly, implicit coercion will happen if you use the loose equality operator ==. This also includes the loose not equal !=.</p>
+<p>Another exception here. JavaScript will not do implicit coercion to a number if you use == or != and both values are strings. This probably makes sense, but it is still worth mentioning, just in case. One last thing about coercion to number. When you want to convert a string to a number, JavaScript will first remove any leading and trailing white space.</p>
+<p>JavaScript will also remove any new line (\n) and tab (\t) characters in the string. If the remaining string doesn’t contain a valid number it will be coerced to NaN. Otherwise, it will be coerced into a number. If the remaining string will be empty it will be coerced to 0. This will also happen with null.</p>
+<h3 id="coercion-to-string" style="position:relative;"><a href="#coercion-to-string" aria-label="coercion to string permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Coercion to string</h3>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Implicit coercion to string</span>
+<span class="token number">56</span> <span class="token operator">+</span> <span class="token string">' words'</span> <span class="token comment">// '56 words'</span>
+<span class="token string">'number '</span> <span class="token operator">+</span> <span class="token number">17</span> <span class="token comment">// 'number 17'</span>
+<span class="token number">7</span> <span class="token operator">+</span> <span class="token string">' dwarfs and '</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token string">' Snow White'</span> <span class="token comment">// '7 dwarfs and 1 Snow White'</span>
+<span class="token string">''</span> <span class="token operator">+</span> <span class="token number">15</span> <span class="token comment">// '15'</span>
+
+<span class="token comment">// Explicit coercion to string</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token comment">// 'true'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token comment">// 'false'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token number">15.5</span><span class="token punctuation">)</span> <span class="token comment">// '15.5'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">650</span><span class="token punctuation">)</span> <span class="token comment">// '-650'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token number">Infinity</span><span class="token punctuation">)</span> <span class="token comment">// 'Infinity'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// ''</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'Jacket'</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// 'Jacket,15'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token comment">// 'null'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token comment">// 'undefined'</span>
+<span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// '[object Object]'</span>
+</code></pre></div>
+<p>Explicit coercion to a string is just as easy as coercion to a number. All you have to do is use String() function. Implicit coercion to a string is just as easy. When you want to trigger implicit coercion you have to use the binary + operator, along with at least one string.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Coercing types to string with toString() method</span>
+<span class="token number">58.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// SyntaxError: Identifier directly after number</span>
+<span class="token punctuation">(</span><span class="token number">58</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// '58'</span>
+<span class="token boolean">true</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 'true'</span>
+<span class="token boolean">false</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 'false'</span>
+<span class="token punctuation">[</span><span class="token string">'JS'</span><span class="token punctuation">,</span> <span class="token string">'TS'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 'JS,TS'</span>
+<span class="token keyword">undefined</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// TypeError: Cannot read property 'toString' of undefined</span>
+<span class="token keyword">null</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// TypeError: Cannot read property 'toString' of null</span>
+<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Joe'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// '[object Object]'</span>
+<span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 'Symbol(name)'</span>
+
+
+<span class="token comment">// Using toString() with radix parameter</span>
+<span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">// '1111'</span>
+<span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token comment">// '30'</span>
+<span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span> <span class="token comment">// 'f'</span></code></pre></div>
+<p>Aside to the String() there is also toString() method. This method also allows you to coerce various types to strings. You can use this method with numbers, booleans, arrays, objects, dates and also Symbols. Don’t use it with null or undefined. If you want to use it to convert a number, or an object, you have to wrap it with parentheses to avoid syntax errors.</p>
+<p>One more thing for numbers. You can also specify radix parameter. The method will then convert the number to the base according to the radix parameter and then into a string.</p>
+<h3 id="coercion-to-boolean" style="position:relative;"><a href="#coercion-to-boolean" aria-label="coercion to boolean permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Coercion to boolean</h3>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Implicit coercion to boolean</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">/* Do something */</span><span class="token punctuation">}</span> <span class="token comment">// logical context</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token number">7</span> <span class="token comment">// true</span>
+<span class="token number">99</span> <span class="token operator">||</span> <span class="token string">'JS'</span> <span class="token comment">// 99</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token number">0</span> <span class="token comment">// false (0 is falsy value)</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token string">''</span> <span class="token comment">// false (empty string is falsy value)</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token keyword">null</span> <span class="token comment">// false (null is falsy value)</span>
+<span class="token operator">!</span><span class="token operator">!</span><span class="token keyword">undefined</span> <span class="token comment">// false (null is falsy value)</span>
+
+<span class="token comment">// Explicit coercion to boolean</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">15</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token string">'Syntax'</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token number">Infinity</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">Infinity</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token number">NaN</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+<span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// true</span></code></pre></div>
+<p>When you want to explicitly convert something in boolean you can do that with Boolean() function. Implicit coercion will happen in two situations. The first situations is a logical context. For example, inside the if…else statement. The second situation is when you use one of the logical operators, the ||, &#x26;&#x26; or !.</p>
+<p>Strict and loose equality
+One topic related to type coercion is equality. In JavaScript, there are two types of eventuality. The first one is loose equality, either == or !=. The second one is strict equality, either === or !==. The difference between those is that one allows for type coercion to happen while the other doesn’t.</p>
+<p>The first one, loose equality, is the one that allows for type coercion to happen. When you use loose equality to check if some values are equal, JavaScript will do two things. First, it will check if the two values are the same type. If not, it will coerce one into another. Then, it will check if those values are the same.</p>
+<p>When you use strict equality, JavaScript will not try to coerce one value into another. Instead, it will do two checks. First, it will check if those values are the same. Second, it will check if their types are the same. Only if both conditions are true, the result will be true. Otherwise, the result will be false.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// Loose equality and coercion</span>
+<span class="token number">0</span> <span class="token operator">==</span> <span class="token boolean">false</span> <span class="token comment">// true (0 is falsy value) - coerced to false == false</span>
+<span class="token number">0</span> <span class="token operator">==</span> <span class="token boolean">true</span> <span class="token comment">// false - coerced to false == false</span>
+<span class="token number">1</span> <span class="token operator">==</span> <span class="token boolean">true</span> <span class="token comment">// true (1 is truthy value) - coerced to true == true</span>
+<span class="token number">1</span> <span class="token operator">==</span> <span class="token boolean">false</span> <span class="token comment">// false - coerced to true == false</span>
+<span class="token string">'15'</span> <span class="token operator">==</span> <span class="token number">15</span> <span class="token comment">// true - coerced to '15' == '15'</span>
+<span class="token number">15</span> <span class="token operator">==</span> <span class="token string">'15'</span> <span class="token comment">// true - coerced to '15' == '15'</span>
+<span class="token keyword">null</span> <span class="token operator">==</span> <span class="token keyword">undefined</span> <span class="token comment">// true - coerced to false == false</span>
+<span class="token keyword">undefined</span> <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token comment">// true - coerced to false == false</span>
+
+
+<span class="token comment">// Strict equality and coercion</span>
+<span class="token number">0</span> <span class="token operator">===</span> <span class="token boolean">false</span> <span class="token comment">// false - number is not a boolean</span>
+<span class="token number">0</span> <span class="token operator">===</span> <span class="token boolean">true</span> <span class="token comment">// false - number is not a boolean</span>
+<span class="token number">1</span> <span class="token operator">===</span> <span class="token boolean">true</span> <span class="token comment">// false - number is not a boolean</span>
+<span class="token number">1</span> <span class="token operator">===</span> <span class="token boolean">false</span> <span class="token comment">// false - number is not a boolean</span>
+<span class="token string">'15'</span> <span class="token operator">===</span> <span class="token number">15</span> <span class="token comment">// false - string is not a number</span>
+<span class="token number">15</span> <span class="token operator">===</span> <span class="token string">'15'</span> <span class="token comment">// false - number is not a string</span>
+<span class="token keyword">null</span> <span class="token operator">===</span> <span class="token keyword">undefined</span> <span class="token comment">// false - null is not undefined</span>
+<span class="token keyword">undefined</span> <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token comment">// false - undefined is not null</span></code></pre></div>
+<p>As you can see, loose equality can lead to results you might not expect. The best way to avoid this, and also to create more reliable equality checks, is to use strict equal. With strict equal, JavaScript will not be able to use type coercion. It will also always compare the types of values, instead of only the values.</p></div></div></div><div class="Post-module--footer--f8705"><div class="Meta-module--meta--dae0a"><p class="Meta-module--date--4d30d">Published<!-- --> <!-- -->Oct 4, 2022</p></div><div class="Tags-module--tags--18589"><ul class="Tags-module--list--82ae6"><li class="Tags-module--item--52015"><a class="Tags-module--link--e4ee3" href="/blogger/tag/javascript/">Javascript</a></li><li class="Tags-module--item--52015"><a class="Tags-module--link--e4ee3" href="/blogger/tag/statements/">Statements</a></li><li class="Tags-module--item--52015"><a class="Tags-module--link--e4ee3" href="/blogger/tag/declarations/">Declarations</a></li></ul></div><div class="Author-module--author--1c58d"><p class="Author-module--bio--08950">Solutions Architect • Web Developer • Quality Analyst • Blogger<a class="Author-module--twitter--90647" href="https://www.twitter.com/rustagi_nikhil" rel="noopener noreferrer" target="_blank"><strong>Nikhil Rustagi</strong> on Twitter</a></p></div></div><div class="Post-module--comments--d3b99"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/2022-10-03/js-104/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-287431d406b6233d1685.js\"],\"component---cache-caches-gatsby-plugin-offline-app-shell-js\":[\"/component---cache-caches-gatsby-plugin-offline-app-shell-js-77c123f5b1f0a7d8a04b.js\"],\"component---src-templates-categories-template-categories-template-tsx\":[\"/component---src-templates-categories-template-categories-template-tsx-f03e186d08b70bf1beba.js\"],\"component---src-templates-category-template-category-template-tsx\":[\"/component---src-templates-category-template-category-template-tsx-341602650d0c66a95a4c.js\"],\"component---src-templates-index-template-index-template-tsx\":[\"/component---src-templates-index-template-index-template-tsx-eb2d71317bba5c65ad6e.js\"],\"component---src-templates-not-found-template-not-found-template-tsx\":[\"/component---src-templates-not-found-template-not-found-template-tsx-83aeea0c3fe08b2e6ee5.js\"],\"component---src-templates-page-template-page-template-tsx\":[\"/component---src-templates-page-template-page-template-tsx-ac6ccf8cd6ff7ddcf800.js\"],\"component---src-templates-post-template-post-template-tsx\":[\"/component---src-templates-post-template-post-template-tsx-2ebd8106635b7571d7c2.js\"],\"component---src-templates-tag-template-tag-template-tsx\":[\"/component---src-templates-tag-template-tag-template-tsx-8301b1dd95cdd27bacf1.js\"],\"component---src-templates-tags-template-tags-template-tsx\":[\"/component---src-templates-tags-template-tags-template-tsx-d612b15fc93e9a9dbda6.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="b1d492f32231cc9faeb0";</script><script src="/blogger/webpack-runtime-7af5260968e6319b365b.js" async></script><script src="/blogger/framework-c7820659a3ea250dd507.js" async></script><script src="/blogger/app-287431d406b6233d1685.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

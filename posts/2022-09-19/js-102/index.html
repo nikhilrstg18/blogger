@@ -1,0 +1,670 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.2.0"/><meta name="theme-color" content="#E100FF"/><meta data-react-helmet="true" name="description" content="JS Operator is a symbol that tells the compiler or interpreter to perform specific mathematical, relational or logical operation and produce final result..."/><meta data-react-helmet="true" property="og:site_name" content="Javascript - 102 | Operators &amp; Expressions - Blog by Nikhil Rustagi"/><meta data-react-helmet="true" property="og:image" content="https://nihkilrstg18.github.io/media/js102.gif"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="Javascript - 102 | Operators &amp; Expressions - Blog by Nikhil Rustagi"/><meta data-react-helmet="true" name="twitter:description" content="JS Operator is a symbol that tells the compiler or interpreter to perform specific mathematical, relational or logical operation and produce final result..."/><meta data-react-helmet="true" name="twitter:image" content="https://nihkilrstg18.github.io/media/js102.gif"/><style data-href="/blogger/styles.154e51ddd3e3f10de025.css" data-identity="gatsby-global-css">html{font-size:100}body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#212121;font-size:16px;line-height:1.625;margin:0 0 0 calc(100vw - 100%);text-rendering:optimizelegibility}body,h1,h2,h3,h4,h5,h6{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}h1,h2,h3,h4,h5,h6{font-weight:600}h1{font-size:40px;line-height:52px;margin-bottom:26px;margin-top:104px}h2{font-size:27px;line-height:39px}h2,h3{margin-bottom:13px;margin-top:52px}h3{font-size:22px;line-height:26px}h4{font-size:19.2px;margin-top:39px}h4,h5{line-height:26px;margin-bottom:13px}h5,h6{font-size:16px;margin-top:65px}h6{line-height:26px;margin-bottom:13px}img{max-width:100%}hr,img{border:0;display:block}hr{background-image:linear-gradient(180deg,transparent 1px,transparent 11px,#212121 0,#212121 15px,transparent 0,transparent 26px);background-size:100% 26px;color:#212121;height:26px;margin:52px auto;width:100px}a{color:#7f00ff;text-decoration:none}a:active,a:focus,a:hover{color:#e100ff}b,strong{font-weight:600}ul{list-style:square;margin-bottom:26px}ul li{margin-bottom:10px;padding:0 5px}p{line-height:26px;margin-bottom:26px;text-align:justify}blockquote{font-style:italic;padding:0;text-align:center}figure{display:block;height:auto;width:100%}th{text-align:left}figcaption,th td:nth-last-child(2n){text-align:center}figcaption{color:#212121;font-size:14px;font-style:italic;line-height:19.5px;margin-bottom:0;margin-top:6.5px}@media screen and (min-width:685px){figure.float-left,figure.float-right{max-width:310px;padding:0 26px}.float-right{float:right}.float-left{float:left}}code[class*=language-],pre[class*=language-]{word-wrap:normal;color:#657b83;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#073642}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1}.token.punctuation{color:#586e75}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198}.token.entity{background:#eee8d5;color:#657b83;cursor:help}.token.atrule,.token.attr-value,.token.keyword{color:#859900}.token.class-name,.token.function{color:#b58900}.token.important,.token.regex,.token.variable{color:#cb4b16}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.Feed-module--feed--a6204 .Feed-module--item--c7a63{margin-bottom:32.5px}.Feed-module--feed--a6204 .Feed-module--item--c7a63:last-child{margin-bottom:13px}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--title--f252f{font-size:27px;line-height:39px;margin-bottom:13px;margin-top:0}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--title--f252f .Feed-module--link--6123b{color:#212121}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--title--f252f .Feed-module--link--6123b:focus,.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--title--f252f .Feed-module--link--6123b:hover{border-bottom:1px solid #212121;color:#212121}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--description--57348{font-size:16px;line-height:26px;margin-bottom:19.5px}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--meta--250c2 .Feed-module--time--72864{color:#212121;font-size:14px;font-weight:600;text-transform:uppercase}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--meta--250c2 .Feed-module--divider--81a18{margin:0 13px}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--meta--250c2 .Feed-module--category--59f58 .Feed-module--link--6123b{color:#e100ff;font-size:14px;font-weight:600;text-transform:uppercase}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--meta--250c2 .Feed-module--category--59f58 .Feed-module--link--6123b:focus,.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--meta--250c2 .Feed-module--category--59f58 .Feed-module--link--6123b:hover{color:#7f00ff}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--more--51a4e{color:#7f00ff;font-size:16px}.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--more--51a4e:focus,.Feed-module--feed--a6204 .Feed-module--item--c7a63 .Feed-module--more--51a4e:hover{border-bottom:1px solid #7f00ff;color:#7f00ff}.Layout-module--layout--2c933{margin-left:auto;margin-right:auto;max-width:1070px}.Layout-module--layout--2c933:before{content:"";display:table}.Layout-module--layout--2c933:after{clear:both;content:"";display:table}.Page-module--page--24e03{margin-bottom:52px}.Page-module--page--24e03 .Page-module--inner--4b31d{padding:26px 19.5px 0}.Page-module--page--24e03 .Page-module--title--90338{font-size:40px;font-weight:600;line-height:52px;margin-bottom:37.7px;margin-top:0}.Page-module--page--24e03 .Page-module--body--561c4{font-size:16px;line-height:26px;margin:0 0 26px}@media screen and (min-width:685px){.Page-module--page--24e03{width:calc(58.275% - 12.5px)}.Page-module--page--24e03:nth-child(1n){clear:none;float:left;margin-right:30px}.Page-module--page--24e03:last-child{margin-right:0}.Page-module--page--24e03:nth-child(12n){float:right;margin-right:0}.Page-module--page--24e03:nth-child(12n+1){clear:both}.Page-module--page--24e03 .Page-module--inner--4b31d{padding:32.5px 19.5px 0}}@media screen and (min-width:960px){.Page-module--page--24e03{width:calc(66.6% - 10px)}.Page-module--page--24e03:nth-child(1n){clear:none;float:left;margin-right:30px}.Page-module--page--24e03:last-child{margin-right:0}.Page-module--page--24e03:nth-child(3n){float:right;margin-right:0}.Page-module--page--24e03:nth-child(3n+1){clear:both}.Page-module--page--24e03 .Page-module--inner--4b31d{padding:39px 26px 0}}.Pagination-module--pagination--d61cb{display:flex;margin-top:52px}.Pagination-module--pagination--d61cb .Pagination-module--previous--4a76b{text-align:left;width:50%}.Pagination-module--pagination--d61cb .Pagination-module--previous--4a76b .Pagination-module--previousLink--5590d{color:#e100ff;font-size:26px;font-weight:700}.Pagination-module--pagination--d61cb .Pagination-module--previous--4a76b .Pagination-module--previousLink--5590d:focus,.Pagination-module--pagination--d61cb .Pagination-module--previous--4a76b .Pagination-module--previousLink--5590d:hover{color:#7f00ff}.Pagination-module--pagination--d61cb .Pagination-module--previous--4a76b .Pagination-module--previousLink--5590d.Pagination-module--disable--7e105{color:#9b9b9b;pointer-events:none}.Pagination-module--pagination--d61cb .Pagination-module--next--1cab8{text-align:right;width:50%}.Pagination-module--pagination--d61cb .Pagination-module--next--1cab8 .Pagination-module--nextLink--532ff{color:#e100ff;font-size:26px;font-weight:700}.Pagination-module--pagination--d61cb .Pagination-module--next--1cab8 .Pagination-module--nextLink--532ff:focus,.Pagination-module--pagination--d61cb .Pagination-module--next--1cab8 .Pagination-module--nextLink--532ff:hover{color:#7f00ff}.Pagination-module--pagination--d61cb .Pagination-module--next--1cab8 .Pagination-module--nextLink--532ff.Pagination-module--disable--7e105{color:#9b9b9b;pointer-events:none}.Author-module--author--cbd31 .Author-module--photo--9787b{background-clip:padding-box;border-radius:50%;display:inline-block;height:75px;margin-bottom:0;width:75px}.Author-module--author--cbd31 .Author-module--title--cf7e5{font-size:18px;font-weight:600;line-height:29.25px;margin:13px 0}.Author-module--author--cbd31 .Author-module--title--cf7e5 .Author-module--link--09c17,.Author-module--author--cbd31 .Author-module--title--cf7e5 .Author-module--link--09c17:focus,.Author-module--author--cbd31 .Author-module--title--cf7e5 .Author-module--link--09c17:hover{color:#212121}.Author-module--author--cbd31 .Author-module--subtitle--86ec5{color:#878787;line-height:26px;margin-bottom:26px}.Icon-module--icon--1d7da{fill:currentcolor;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;speak:none;stroke:currentcolor;stroke-width:0;display:inline-block;font-style:normal;font-variant:normal;font-weight:400;height:1em;line-height:1em;text-align:center;text-transform:none;width:1em}.Contacts-module--contacts--09178{margin-bottom:26px}.Contacts-module--contacts--09178 .Contacts-module--list--9670b{display:flex;flex-flow:row wrap;flex-grow:0;flex-shrink:0;list-style:none;margin:13px 0;max-width:150px;padding:0}.Contacts-module--contacts--09178 .Contacts-module--list--9670b .Contacts-module--item--f9cb0{align-content:center;align-items:center;border:1px solid #ebebeb;border-radius:50%;display:flex;height:35px;justify-content:center;line-height:35px;margin:6.5px;padding:0;text-align:center;width:35px}.Contacts-module--contacts--09178 .Contacts-module--list--9670b .Contacts-module--item--f9cb0:nth-child(3n+1){margin-left:0}.Contacts-module--contacts--09178 .Contacts-module--list--9670b .Contacts-module--item--f9cb0 .Contacts-module--link--de1e0{border:0;color:#212121;display:flex}.Contacts-module--contacts--09178 .Contacts-module--list--9670b .Contacts-module--item--f9cb0 .Contacts-module--link--de1e0:focus,.Contacts-module--contacts--09178 .Contacts-module--list--9670b .Contacts-module--item--f9cb0 .Contacts-module--link--de1e0:hover{color:#7f00ff}.Copyright-module--copyright--2c602{color:#999;font-size:14px}.Menu-module--menu--113a9{margin-bottom:26px}.Menu-module--menu--113a9 .Menu-module--list--e1ae3{list-style:none;margin:0;padding:0}.Menu-module--menu--113a9 .Menu-module--list--e1ae3 .Menu-module--item--8b679{margin:13px 0;padding:0}.Menu-module--menu--113a9 .Menu-module--list--e1ae3 .Menu-module--item--8b679 .Menu-module--link--a6f02{border:0;color:#212121;font-size:16px;font-weight:400}.Menu-module--menu--113a9 .Menu-module--list--e1ae3 .Menu-module--item--8b679 .Menu-module--link--a6f02:focus,.Menu-module--menu--113a9 .Menu-module--list--e1ae3 .Menu-module--item--8b679 .Menu-module--link--a6f02:hover{border-bottom:1px solid #7f00ff;color:#7f00ff}.Menu-module--menu--113a9 .Menu-module--list--e1ae3 .Menu-module--item--8b679 .Menu-module--link--a6f02.Menu-module--active--6cb74{border-bottom:1px solid #212121;color:#212121}.Sidebar-module--sidebar--1bfa1{width:100%}.Sidebar-module--sidebar--1bfa1 .Sidebar-module--inner--344d0{padding:26px 19.5px 0;position:relative}@media screen and (min-width:685px){.Sidebar-module--sidebar--1bfa1{width:calc(41.625% - 17.5px)}.Sidebar-module--sidebar--1bfa1:nth-child(1n){clear:none;float:left;margin-right:30px}.Sidebar-module--sidebar--1bfa1:last-child{margin-right:0}.Sidebar-module--sidebar--1bfa1:nth-child(12n){float:right;margin-right:0}.Sidebar-module--sidebar--1bfa1:nth-child(12n+1){clear:both}.Sidebar-module--sidebar--1bfa1 .Sidebar-module--inner--344d0{padding:32.5px 19.5px 0}.Sidebar-module--sidebar--1bfa1 .Sidebar-module--inner--344d0:after{background:#e6e6e6;background:linear-gradient(180deg,#e6e6e6 0,#e6e6e6 48%,#fff);bottom:0;content:"";height:540px;position:absolute;right:-10px;top:30px;width:1px}}@media screen and (min-width:960px){.Sidebar-module--sidebar--1bfa1{width:calc(33.3% - 20px)}.Sidebar-module--sidebar--1bfa1:nth-child(1n){clear:none;float:left;margin-right:30px}.Sidebar-module--sidebar--1bfa1:last-child{margin-right:0}.Sidebar-module--sidebar--1bfa1:nth-child(3n){float:right;margin-right:0}.Sidebar-module--sidebar--1bfa1:nth-child(3n+1){clear:both}.Sidebar-module--sidebar--1bfa1 .Sidebar-module--inner--344d0{padding:39px}}.Author-module--author--1c58d{border-top:1px solid #e6e6e6;line-height:26px;margin-bottom:52px;margin-top:26px;max-width:640px;padding-top:26px}.Author-module--author--1c58d .Author-module--bio--08950 .Author-module--twitter--90647{display:block;text-decoration:underline}@media screen and (min-width:685px){.Author-module--author--1c58d{margin-left:auto;margin-right:auto}}.Content-module--content--80d58{margin:0 auto;max-width:945px;padding:0 13px}.Content-module--content--80d58 .Content-module--title--09504{font-size:32px;font-weight:600;line-height:42.9px;margin:26px auto 0;max-width:640px;text-align:center}.Content-module--content--80d58 .Content-module--body--726c2 figure{margin-bottom:26px}.Content-module--content--80d58 .Content-module--body--726c2 figure blockquote{font-style:italic;margin-top:0;padding:26px 0;text-align:center}.Content-module--content--80d58 .Content-module--body--726c2 figure blockquote p{font-size:26.9072px;line-height:39px;margin-bottom:26px;margin-top:0;max-width:640px}.Content-module--content--80d58 .Content-module--body--726c2 a{text-decoration:underline}.Content-module--content--80d58 .Content-module--body--726c2 *{margin-left:auto;margin-right:auto;max-width:640px}.Content-module--content--80d58 .Content-module--body--726c2 h2>a{visibility:hidden}.Content-module--content--80d58 .Content-module--body--726c2 img{max-width:100%}@media screen and (min-width:960px){.Content-module--content--80d58{padding:0}.Content-module--content--80d58 .Content-module--title--09504{font-size:48px;line-height:58.5px;margin-bottom:39px;margin-top:58.5px}.Content-module--content--80d58 .Content-module--body--726c2,.Content-module--content--80d58 .Content-module--body--726c2 p{font-size:18px;line-height:29.25px;margin-bottom:29.25px}.Content-module--content--80d58 .Content-module--body--726c2 h2>a{padding-right:26px;visibility:unset}}.Meta-module--meta--dae0a .Meta-module--date--4d30d{font-style:italic}.Tags-module--tags--18589{margin-bottom:13px}.Tags-module--tags--18589 .Tags-module--list--82ae6{list-style:none;padding:0}.Tags-module--tags--18589 .Tags-module--list--82ae6 .Tags-module--item--52015{display:inline-block;margin:13px 3.25px}@media screen and (min-width:685px){.Tags-module--tags--18589 .Tags-module--list--82ae6 .Tags-module--item--52015:first-child{margin-left:0;padding-left:0}}.Tags-module--tags--18589 .Tags-module--list--82ae6 .Tags-module--item--52015 .Tags-module--link--e4ee3{border:1px solid #e6e6e6;border-radius:20px;color:#212121;display:inline-block;height:35px;line-height:35px;padding:0 19.5px;text-decoration:none}.Tags-module--tags--18589 .Tags-module--list--82ae6 .Tags-module--item--52015 .Tags-module--link--e4ee3:focus,.Tags-module--tags--18589 .Tags-module--list--82ae6 .Tags-module--item--52015 .Tags-module--link--e4ee3:hover{color:#7f00ff}.Post-module--post--3a994 .Post-module--content--3c6e5{margin:0 auto}.Post-module--post--3a994 .Post-module--comments--d3b99,.Post-module--post--3a994 .Post-module--footer--f8705{margin:0 auto;max-width:640px;padding:0 13px}.Post-module--post--3a994 .Post-module--button--51f8f{border:1px solid #e6e6e6;border-radius:20px;color:#212121;display:block;font-size:16px;font-weight:400;height:35px;line-height:35px;margin-left:auto;margin-right:auto;margin-top:26px;max-width:90px;padding:0 26px;text-align:center}.Post-module--post--3a994 .Post-module--button--51f8f:focus,.Post-module--post--3a994 .Post-module--button--51f8f:hover{color:#7f00ff}@media screen and (min-width:960px){.Post-module--post--3a994 .Post-module--comments--d3b99,.Post-module--post--3a994 .Post-module--footer--f8705{padding:0}.Post-module--post--3a994 .Post-module--button--51f8f{left:30px;margin:0;max-width:none;position:fixed;top:30px}}</style><link rel="alternate" type="application/rss+xml" title="Blog by Nikhil Rustagi" href="/blogger/rss.xml"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><script async="" src="https://www.googletagmanager.com/gtag/js?id="></script><script>
+      
+      
+      if(true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '', {"send_page_view":false});
+      }
+      </script><link rel="sitemap" type="application/xml" href="/blogger/sitemap-index.xml"/><link rel="icon" href="/blogger/favicon-32x32.png?v=6a7f9eb92a6fb0ab7969d871ed676489" type="image/png"/><link rel="manifest" href="/blogger/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/blogger/icons/icon-48x48.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="72x72" href="/blogger/icons/icon-72x72.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="96x96" href="/blogger/icons/icon-96x96.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="144x144" href="/blogger/icons/icon-144x144.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="192x192" href="/blogger/icons/icon-192x192.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="256x256" href="/blogger/icons/icon-256x256.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="384x384" href="/blogger/icons/icon-384x384.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><link rel="apple-touch-icon" sizes="512x512" href="/blogger/icons/icon-512x512.png?v=6a7f9eb92a6fb0ab7969d871ed676489"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true">Javascript - 102 | Operators &amp; Expressions - Blog by Nikhil Rustagi</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="Layout-module--layout--2c933"><div class="Post-module--post--3a994"><a class="Post-module--button--51f8f" href="/blogger/">All Blogs</a><div class="Post-module--content--3c6e5"><div class="Content-module--content--80d58"><h1 class="Content-module--title--09504">Javascript - 102 | Operators &amp; Expressions</h1><div class="Content-module--body--726c2"><p>JS Operator is a symbol that tells the compiler or interpreter to perform specific mathematical, relational or logical operation and produce final result.</p>
+<p><img src="/42c0aefd26944cb435e3ad436240d7a1/js102.gif" alt="Javascript code"></p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>JS Comments</strong></td>
+<td><a href="#comments">Comments</a></td>
+</tr>
+<tr>
+<td><strong>JS Operators</strong></td>
+<td><a href="#unary">1 Unary</a><br/><a href="#binary">2 Binary</a><br/><a href="#ternary-or-conditional">3 Ternary or Conditional</a> <br/><a href="#assignment">4 Assignment</a><br/><a href="#comparison">5 Comparison</a><br/><a href="#arithmatic">6 Arithmatic</a><br/><a href="#bitwise">7 Bitwise</a><br/><a href="#logical">8 Logical</a><br/><a href="#misc">9 Misc</a></td>
+</tr>
+<tr>
+<td><strong>JS Expressions</strong></td>
+<td><a href="#expressions">Expressions</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="comments" style="position:relative;"><a href="#comments" aria-label="comments permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Comments</h1>
+<ul>
+<li>Comments behave like whitespace, and are discarded during script execution.</li>
+<li>Comments on method, exremely powerfull in describing purpose of method and documentation</li>
+<li>Comments on property, exremely powerfull in describing purpose of property and documentation</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Comment-Type</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>single-line comment</td>
+<td><code class="language-text">// a one line comment</code></td>
+</tr>
+<tr>
+<td>multi-line comment</td>
+<td><code class="language-text">/* this is a longer, </code><br/><code class="language-text">* multi-line comment</code><br/><code class="language-text">*/</code></td>
+</tr>
+<tr>
+<td>nested comment</td>
+<td><code class="language-text">/* You can't, but, /* nest comments */ end */</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>You might also see a third type of comment syntax at the start of some JavaScript files, which looks something like this: <code class="language-text">#!/usr/bin/env node.</code></p>
+<p>This is called hashbang comment syntax, and is a special comment used to specify the path to a particular JavaScript engine that should execute the script. See Hashbang comments for more details.</p>
+</blockquote>
+<h1 id="operators" style="position:relative;"><a href="#operators" aria-label="operators permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Operators</h1>
+<h2 id="unary" style="position:relative;"><a href="#unary" aria-label="unary permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unary</h2>
+<p>Operators that operate on single operand</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unary Plus</td>
+<td><strong>+</strong></td>
+<td>Attempts to convert the operand to a number, if it is not already <br /> eg. (+“3” returns 3) , (+true returns 1) 1</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Increment</td>
+<td><strong>++</strong></td>
+<td>Adds one to its operand. <br/>If used as a prefix operator (++x), returns the value of its operand after adding one; if used as a postfix operator (x++), returns the value of its operand before adding one</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Decrement</td>
+<td><strong>- -</strong></td>
+<td>Subtracts one from its operand. <br/>If used as a prefix operator (- -x), returns the value of its operand after adding one; if used as a postfix operator (x- -), returns the value of its operand before adding one</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Unary Negation</td>
+<td><strong>-</strong></td>
+<td>Returns the negation of its operand <br />eg. if x is 3, then -x returns -3</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="binary" style="position:relative;"><a href="#binary" aria-label="binary permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Binary</h2>
+<p>Operator that operate on two operands like <a href="#arithmatic">Arithematic Operators</a></p>
+<h2 id="ternary-or-conditional" style="position:relative;"><a href="#ternary-or-conditional" aria-label="ternary or conditional permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ternary or Conditional</h2>
+<p>operator that takes three operands</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ternary or Conditional</td>
+<td><strong>? :</strong></td>
+<td>is the only operator that takes three operands: a condition followed by a question mark (<strong>?</strong>), then an expression to execute if the condition is truthy followed by a colon (<strong>:</strong>), and finally the expression to execute if the condition is falsy. <br />This operator is frequently used as an alternative to an if…else statement</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="assignment" style="position:relative;"><a href="#assignment" aria-label="assignment permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Assignment</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assingment</td>
+<td>x <strong>=</strong> y</td>
+<td>x = y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Addition Assignment</td>
+<td>x <strong>+=</strong> y</td>
+<td>x = x + y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Subtraction Assignment</td>
+<td>x <strong>-=</strong> y</td>
+<td>x = x - y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Multiplication Assignment</td>
+<td>x *<strong>=</strong> y</td>
+<td>x = x * y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Division Assignment</td>
+<td>x <strong>/=</strong> y</td>
+<td>x = x / y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Remainder Assignment</td>
+<td>x <strong>%=</strong> y</td>
+<td>x = x % y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Exponentiation Assignment</td>
+<td>x **<strong>=</strong> y</td>
+<td>x = x ** y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Left Shift Assignment</td>
+<td>x <strong>&#x3C;&#x3C;=</strong> y</td>
+<td>x = x &#x3C;&#x3C; y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Right Shift Assignment</td>
+<td>x <strong>>>=</strong> y</td>
+<td>x = x >> y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Unsigned-Right-Shift Assignment</td>
+<td>x <strong>>>>=</strong> y</td>
+<td>x = x >>> y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Bitwise AND Assignment</td>
+<td>x <strong>&#x26;=</strong> y</td>
+<td>x = x &#x26; y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Bitwise XOR Assignment</td>
+<td>x <strong>^=</strong> y</td>
+<td>x = x ^ y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Bitwise OR Assignment</td>
+<td>x <strong>|=</strong> y</td>
+<td>x = x | y</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Logical AND Assignment</td>
+<td>x <strong>&#x26;&#x26;=</strong> y</td>
+<td>x = x &#x26;&#x26; (x = y)</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Logical OR Assignment<br/>(Shorting)</td>
+<td>x <strong>||=</strong> y</td>
+<td>x = x || (x = y)</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Logical Nullish Assignment</td>
+<td>x <strong>??=</strong> y</td>
+<td>x = x ?? (x = y)</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_nullish_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Bitwise operator can also used with boolean</p>
+</blockquote>
+<p><strong>Destructring Assignment</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="nofollow noopener noreferrer">View</a></p>
+<ul>
+<li><strong>Array Desctrucutring</strong></li>
+</ul>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> foo <span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'one'</span><span class="token punctuation">,</span><span class="token string">'two'</span><span class="token punctuation">,</span><span class="token string">'three'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// without destructuring </span>
+<span class="token keyword">var</span> one <span class="token operator">=</span> foo<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> two <span class="token operator">=</span> foo<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> three <span class="token operator">=</span> foo<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// with destructuring</span>
+<span class="token keyword">var</span> <span class="token punctuation">[</span>one<span class="token punctuation">,</span>two<span class="token punctuation">,</span>three<span class="token punctuation">]</span> <span class="token operator">=</span> foo<span class="token punctuation">;</span></code></pre></div>
+<ul>
+<li><strong>Object Desctrucutring</strong></li>
+</ul>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> bar <span class="token operator">=</span><span class="token punctuation">{</span><span class="token literal-property property">one</span><span class="token operator">:</span><span class="token string">'one'</span><span class="token punctuation">,</span><span class="token literal-property property">two</span><span class="token operator">:</span><span class="token string">'two'</span><span class="token punctuation">,</span><span class="token literal-property property">three</span><span class="token operator">:</span><span class="token string">'three'</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// without destructuring </span>
+<span class="token keyword">var</span> one <span class="token operator">=</span> bar<span class="token punctuation">.</span>one<span class="token punctuation">;</span>
+<span class="token keyword">var</span> two <span class="token operator">=</span> bar<span class="token punctuation">.</span>two<span class="token punctuation">;</span>
+<span class="token keyword">var</span> three <span class="token operator">=</span> bar<span class="token punctuation">.</span>three<span class="token punctuation">;</span>
+
+<span class="token comment">// with destructuring</span>
+<span class="token keyword">var</span> <span class="token punctuation">{</span>one<span class="token punctuation">,</span>two<span class="token punctuation">,</span>three<span class="token punctuation">}</span> <span class="token operator">=</span> bar<span class="token punctuation">;</span></code></pre></div>
+<h2 id="comparison" style="position:relative;"><a href="#comparison" aria-label="comparison permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Comparison</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Equality</td>
+<td><strong>==</strong></td>
+<td>Returns true if the operands are equal</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#equality" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Inequality</td>
+<td><strong>!=</strong></td>
+<td>Returns true if the operands are not equal</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#inequality" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Identity <br/>(strict equality)</td>
+<td><strong>===</strong></td>
+<td>Returns true if the operands are equal and of the same type</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#identity" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Nonidentity <br/> (strict inequality)</td>
+<td><strong>!==</strong></td>
+<td>Returns true if the operands are of the same type but not equal, or are of different type</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#nonidentity" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Greater than</td>
+<td><strong>></strong></td>
+<td>Returns true if the left operand is greater than the right operand</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#greater_than_operator" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Greater Than Or Equal</td>
+<td><strong>>=</strong></td>
+<td>Returns true if the left operand is greater than or equal to the right operand</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#greater_than_or_equal_operator" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Less Than</td>
+<td><strong>&#x3C;</strong></td>
+<td>Returns true if the left operand is less than the right operand.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#less_than_operator" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Less Than Or Equal</td>
+<td><strong>&#x3C;=</strong></td>
+<td>Returns true if the left operand is less than or equal to the right operand.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#less_than_or_equal_operator" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="arithmatic" style="position:relative;"><a href="#arithmatic" aria-label="arithmatic permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Arithmatic</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remainder</td>
+<td><strong>%</strong></td>
+<td>Returns the integer remainder of dividing two operands <br/> It always takes the sign of the dividend</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Division</td>
+<td><strong>/</strong></td>
+<td>Returns the integer quotient of dividing two operands</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Multiplication</td>
+<td>*</td>
+<td>Returns the product of two operands</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Addition</td>
+<td><strong>+</strong></td>
+<td>Returns the sum of two operands</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Subtraction</td>
+<td><strong>-</strong></td>
+<td>Returns the difference of two operands</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Exponentiation</td>
+<td>**</td>
+<td>Returns the result of raising the first operand to the power of the second operand <br />It is equivalent to Math.pow, except it also accepts BigInts as operands</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="bitwise" style="position:relative;"><a href="#bitwise" aria-label="bitwise permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Bitwise</h2>
+<p>Operater operates on bit representation of operand. further classfies in to 2 more categories</p>
+<h3 id="logical-bitwise" style="position:relative;"><a href="#logical-bitwise" aria-label="logical bitwise permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Logical bitwise</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bitwise AND</td>
+<td><strong>&#x26;</strong></td>
+<td>The bitwise AND operator ( &#x26; ) returns a 1 in each bit position for which the corresponding bits of both operands are 1s</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Bitwise OR</td>
+<td><strong>|</strong></td>
+<td>The bitwise OR operator ( | ) returns a 1 in each bit position for which the corresponding bits of either or both operands are 1s.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Bitwise XOR</td>
+<td><strong>^</strong></td>
+<td>The bitwise XOR operator (^) returns a 1 in each bit position for which the corresponding bits of either but not both operands are 1s.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Bitwise NOT</td>
+<td><strong>~</strong></td>
+<td>The bitwise NOT operator (~) inverts the bits of its operand. Like other bitwise operators, it converts the operand to a 32-bit signed integer</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="shift-bitwise" style="position:relative;"><a href="#shift-bitwise" aria-label="shift bitwise permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Shift bitwise</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left Shift</td>
+<td><strong>&#x3C;&#x3C;</strong></td>
+<td>The left shift operator (&#x3C;&#x3C;) shifts the first operand the specified number of bits, modulo 32, to the left. Excess bits shifted off to the left are discarded. Zero bits are shifted in from the right</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Right Shift</td>
+<td><strong>>></strong></td>
+<td>The right shift operator (&#x3C;&#x3C;) shifts the first operand the specified number of bits, modulo 32, to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logical" style="position:relative;"><a href="#logical" aria-label="logical permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Logical</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logical AND</td>
+<td><strong>&#x26;&#x26;</strong></td>
+<td>The logical AND ( &#x26;&#x26; ) operator (logical conjunction) for a set of boolean operands will be true if and only if all the operands are true. Otherwise it will be false.<br /> More generally, the operator returns the value of the first falsy operand encountered when evaluating from left to right, or the value of the last operand if they are all truthy.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Logical OR <br /> Short Circuit</td>
+<td><strong>||</strong></td>
+<td>The logical OR ( || ) operator (logical disjunction) for a set of operands is true if and only if one or more of its operands is true. It is typically used with boolean (logical) values. <br /> When it is, it returns a Boolean value. However, the || operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Logical NOT</td>
+<td><strong>!</strong></td>
+<td>The logical NOT (!) operator (logical complement, negation) takes truth to falsity and vice versa. It is typically used with boolean (logical) values.<br /> When used with non-Boolean values, it returns false if its single operand can be converted to true; otherwise, returns true.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="miscellaneous" style="position:relative;"><a href="#miscellaneous" aria-label="miscellaneous permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Miscellaneous</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>instanceof</td>
+<td><strong>instanceof</strong></td>
+<td>The instanceof operator tests to see if the prototype property of a constructor appears anywhere in the prototype chain of an object. The return value is a boolean value. Its behavior can be customized with Symbol.hasInstance.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>typeof</td>
+<td><strong>typeof</strong></td>
+<td>The typeof operator returns a string indicating the type of the unevaluated operand.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>this</td>
+<td><strong>this</strong></td>
+<td>The value of this is determined by how a function is called (runtime binding). It can’t be set by assignment during execution, and it may be different each time the function is called.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>super</td>
+<td><strong>super</strong></td>
+<td>The super keyword is used to access properties on an object literal or class’s [[Prototype]], or invoke a superclass’s constructor. <br />The super.prop and super[expr] expressions are valid in any method definition in both classes and object literals. The super(…args) expression is valid in class constructors.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong>void</strong></td>
+<td>The void operator evaluates the given expression and then returns undefined.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>null</td>
+<td><strong>null</strong></td>
+<td>The value null represents the intentional absence of any object value. It is one of JavaScript’s primitive values and is treated as falsy for boolean operations.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>in</td>
+<td><strong>in</strong></td>
+<td>The in operator returns true if the specified property is in the specified object or its prototype chain.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>await</td>
+<td><strong>await</strong></td>
+<td>The await operator is used to wait for a Promise. It can only be used inside an async function within regular JavaScript code; however it can be used on its own with JavaScript modules.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>delete</td>
+<td><strong>delete</strong></td>
+<td>The JavaScript delete operator removes a property from an object; if no more references to the same property are held, it is eventually released automatically.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>new</td>
+<td><strong>new</strong></td>
+<td>The new operator lets developers create an instance of a user-defined object type or of one of the built-in object types that has a constructor function.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Nullish coalescing</td>
+<td><strong>??</strong></td>
+<td>returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>Optional Chaining <br />or Elvis <br />or Safe traversal</td>
+<td><strong>?.</strong></td>
+<td>The ?. operator is like the . chaining operator, except that instead of causing an error if a reference is nullish (null or undefined), the expression short-circuits with a return value of undefined.<br /> When used with function calls, it returns undefined if the given function does not exist</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="expressions" style="position:relative;"><a href="#expressions" aria-label="expressions permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Expressions</h1>
+<blockquote>
+<p>An expression is any valid unit of code that resolves to a value.</p>
+</blockquote>
+<ul>
+<li>Every syntactically valid expression resolves to some value but conceptually, there are two types of expressions: with side effects (for example: those that assign value to a variable) and those that in some sense evaluate and therefore resolve to a value.</li>
+<li>The expression <code class="language-text">x = 7</code> is an example of the first type. This expression uses the = operator to assign the value seven to the variable x. The expression itself evaluates to seven.</li>
+<li>The code <code class="language-text">3 + 4 </code>is an example of the second expression type. This expression uses the + operator to add three and four together without assigning the result, seven, to a variable.</li>
+</ul>
+<p>JavaScript has the following expression categories:</p>
+<ul>
+<li>
+<p>Arithmetic: evaluates to a number, for example 3.14159. (Generally uses arithmetic operators.)</p>
+</li>
+<li>
+<p>String: evaluates to a character string, for example, “Fred” or “234”. (Generally uses string operators.)</p>
+</li>
+<li>
+<p>Logical: evaluates to true or false. (Often involves logical operators.)</p>
+</li>
+<li>
+<p>Primary expressions: Basic keywords and general expressions in JavaScript.</p>
+</li>
+<li>
+<p><strong>Left-hand-side expressions</strong>: Left values are the destination of an assignment.</p>
+<p>eg</p>
+<p>You can use the <code class="language-text">new</code> operator to create an instance of a user-defined object type or of one of the built-in object types. Use new as follows:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> objectName <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">objectType</span><span class="token punctuation">(</span><span class="token punctuation">[</span>param1<span class="token punctuation">,</span> param2<span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">,</span> paramN<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Expression</th>
+<th>Meaning</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class expression</td>
+<td>class expression</td>
+<td>The class expression is one way to define a class. Similar to function expressions, class expressions can be named or unnamed. If named, the name of the class is local to the class body only.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>function expression</td>
+<td>function expression</td>
+<td>The function keyword can be used to define a function inside an expression.<br />You can also define functions using the Function constructor and a function declaration.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+<tr>
+<td>regular expression</td>
+<td>regular expression</td>
+<td>Regular expressions are patterns used to match character combinations in strings. In JavaScript, regular expressions are also objects. These patterns are used with the exec() and test() methods of RegExp, and with the match(), matchAll(), replace(), replaceAll(), search(), and split() methods of String.</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="nofollow noopener noreferrer">View</a></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="Post-module--footer--f8705"><div class="Meta-module--meta--dae0a"><p class="Meta-module--date--4d30d">Published<!-- --> <!-- -->Sep 20, 2022</p></div><div class="Tags-module--tags--18589"><ul class="Tags-module--list--82ae6"><li class="Tags-module--item--52015"><a class="Tags-module--link--e4ee3" href="/blogger/tag/javascript/">Javascript</a></li><li class="Tags-module--item--52015"><a class="Tags-module--link--e4ee3" href="/blogger/tag/operators/">Operators</a></li><li class="Tags-module--item--52015"><a class="Tags-module--link--e4ee3" href="/blogger/tag/expressions/">Expressions</a></li></ul></div><div class="Author-module--author--1c58d"><p class="Author-module--bio--08950">Solutions Architect • Web Developer • Quality Analyst • Blogger<a class="Author-module--twitter--90647" href="https://www.twitter.com/rustagi_nikhil" rel="noopener noreferrer" target="_blank"><strong>Nikhil Rustagi</strong> on Twitter</a></p></div></div><div class="Post-module--comments--d3b99"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/2022-09-19/js-102/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-287431d406b6233d1685.js\"],\"component---cache-caches-gatsby-plugin-offline-app-shell-js\":[\"/component---cache-caches-gatsby-plugin-offline-app-shell-js-77c123f5b1f0a7d8a04b.js\"],\"component---src-templates-categories-template-categories-template-tsx\":[\"/component---src-templates-categories-template-categories-template-tsx-f03e186d08b70bf1beba.js\"],\"component---src-templates-category-template-category-template-tsx\":[\"/component---src-templates-category-template-category-template-tsx-341602650d0c66a95a4c.js\"],\"component---src-templates-index-template-index-template-tsx\":[\"/component---src-templates-index-template-index-template-tsx-eb2d71317bba5c65ad6e.js\"],\"component---src-templates-not-found-template-not-found-template-tsx\":[\"/component---src-templates-not-found-template-not-found-template-tsx-83aeea0c3fe08b2e6ee5.js\"],\"component---src-templates-page-template-page-template-tsx\":[\"/component---src-templates-page-template-page-template-tsx-ac6ccf8cd6ff7ddcf800.js\"],\"component---src-templates-post-template-post-template-tsx\":[\"/component---src-templates-post-template-post-template-tsx-2ebd8106635b7571d7c2.js\"],\"component---src-templates-tag-template-tag-template-tsx\":[\"/component---src-templates-tag-template-tag-template-tsx-8301b1dd95cdd27bacf1.js\"],\"component---src-templates-tags-template-tags-template-tsx\":[\"/component---src-templates-tags-template-tags-template-tsx-d612b15fc93e9a9dbda6.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="b1d492f32231cc9faeb0";</script><script src="/blogger/webpack-runtime-7af5260968e6319b365b.js" async></script><script src="/blogger/framework-c7820659a3ea250dd507.js" async></script><script src="/blogger/app-287431d406b6233d1685.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
