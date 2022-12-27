@@ -1,5 +1,5 @@
 ---
-title: Javascript - 102 | Operators & Expressions
+title: JS-102 | Operators & Expressions
 date: "2022-09-19T23:46:37.121Z"
 template: "post"
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: Javascript - 104 | Types & Cast-Coercion
+title: JS-104 | Types & Cast-Coercion
 date: "2022-10-03T23:46:37.121Z"
 template: "post"
 draft: false

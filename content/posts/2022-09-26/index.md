@@ -1,5 +1,5 @@
 ---
-title: Javascript - 103 | Declarations & Statements
+title: JS-103 | Declarations & Statements
 date: "2022-09-26T23:46:37.121Z"
 template: "post"
 draft: false

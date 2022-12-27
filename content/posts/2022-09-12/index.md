@@ -1,5 +1,5 @@
 ---
-title: Javascript - 101 | Engine & Runtime
+title: JS-101 | Engine & Runtime
 date: "2022-09-12T23:46:37.121Z"
 template: "post"
 draft: false
