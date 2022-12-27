@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "framework-c7820659a3ea250dd507.js"
   },
   {
-    "url": "app-287431d406b6233d1685.js"
+    "url": "app-0ff3a952725c370bf0ce.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9bb4d37542b350ee1eba43255cda9ebd"
+    "revision": "4fa670fabf3041028814aafcf598be51"
   },
   {
     "url": "manifest.webmanifest",
@@ -154,7 +154,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/blogger/app-287431d406b6233d1685.js`))) {
+  if (!resources || !(await caches.match(`/blogger/app-0ff3a952725c370bf0ce.js`))) {
     return await fetch(event.request)
   }
 
